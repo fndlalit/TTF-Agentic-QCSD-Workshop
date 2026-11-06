@@ -1,0 +1,156 @@
+# Tokyo Test Fest 2026 · Agentic QCSD Tutorial
+
+Welcome 👋 This is the official repo for the half-day tutorial **The 70% Problem: Reclaiming Testing's Intellectual Core with Agentic Quality Engineering** at **[Tokyo Test Fest 2026](https://tokyotestfest.com/en/dragan_lalit_2026/)**.
+
+**Half-day tutorial · Thursday 12 November 2026 · 13:00 to 16:00 · Facilitators: Lalitkumar Bhamare and Dragan Spiridonov**
+
+**Agentic QCSD** is about putting autonomous AI quality agents to work *across the whole delivery lifecycle* — not just generating tests, but reasoning about requirements, product risk, code quality, security, and accessibility the way a quality engineer would. In this session you'll drive a fleet of these agents (**[Agentic QE](https://github.com/proffesor-for-testing/agentic-qe)**) through four SDLC phases, watch what they surface *on their own*, and then judge their output with the **PACTS** lens (Proactive, Autonomous, Collaborative, Targeted, Structured).
+
+The catch: great agents need something real to chew on. So this repo also ships a small, deliberately-flawed e-commerce app as the **subject under test** — see [The demo app](#the-demo-app) below.
+
+---
+
+## What you'll do
+
+A short warm-up plus four SDLC exercises (requirements testability, product factors, test design, deployment readiness) and a self-learning close — all copy-paste, in **[LAB.md](./LAB.md)**, sized for the three hours. The exercises build on each other (Refinement's ideas feed Development; CI/CD verifies the result), and every exercise **persists what it learns** so the fleet's memory grows as you go. Two **stretch exercises** (2b exploratory coverage, 2c defect risk profile) are in LAB.md for early finishers and for after the session:
+
+| Step | Agent(s) / tool | The question it answers |
+|------|-----------------|--------------------------|
+| **0 · Warm-up** | `aqe code index src/` (your terminal) | Build a knowledge-graph map of the code and a clean memory baseline. Runs locally, no API key, a few seconds. |
+| **1 · Ideation** | ideation gate (quality-criteria + risk + requirements) | Before any code — can a QE even do their job with these requirements? GO / CONDITIONAL / NO-GO. |
+| **2 · Refinement** | `qe-product-factors-assessor` | What is this product really made of (SFDIPOT), and where's the risk? |
+| **2b · Exploratory coverage** *(stretch)* | `/exploratory-testing-advanced` | Which exploratory charters does the product need, what does a first pass find, and what is left for a human tester? |
+| **2c · Defect risk profile** *(stretch)* | `qe-defect-predictor` | Which modules are most likely to hold defects, and why? Does that agree with the module we test next? |
+| **3 · Development** | `qe-test-architect` | Can it turn those ideas into strong, runnable tests for the riskiest module? |
+| **4 · CI/CD** | `qe-queen-coordinator` (verify) | Is this releasable? Coverage + security + a 90% gate → GO / CONDITIONAL / NO-GO. |
+| **5 · Self-Learning** | AQE memory | Put memory to work: have the fleet consolidate everything it learned into an instant onboarding / handoff brief. |
+
+The SDLC exercises have **two prompt versions** — one for **Claude Code users** (skills / orchestrator) and one for **non-Claude-Code users** (generic step list) — so they work on any tool; Step 0 is three terminal commands and Step 5 is one prompt, both identical on every tool. You then **Apply PACTS** to score each agent's output, and finish with a **Personal Adoption Roadmap**. Everything is kept lean and token-cheap so a whole room can run it on personal keys.
+
+---
+
+## Before you arrive
+
+A tutorial day is not enough time to fix a laptop. Please get through Setup at home.
+
+- **Node.js 22.13 or newer, and npm 10 or newer.** Check with `node -v` and `npm -v`. The session page lists Node 20, but the current AQE package declares `node >= 22.13`, so install Node 22 LTS or newer. The devcontainer supplies Node 22.
+- **Rights to install a global npm package.** Setup runs `npm install -g agentic-qe`. If your machine blocks that, bring a laptop that does not.
+- **A coding agent you already use, signed in and working.** Claude Code, GitHub Copilot, Cursor, AWS Kiro, OpenAI Codex CLI, Windsurf, Cline, OpenCode, Kilo Code, Roo Code or Continue.dev. AQE drives whichever one you have, through one MCP server.
+- **Your own model access.** Steps 1 to 5 spend your tokens on your own key or subscription. Step 0 spends none. Budget about what an hour of ordinary agent use costs you.
+- **Do the whole of Setup before the session,** including `aqe code index src/`. Conference wifi and corporate proxies are the two things most likely to break it, and neither is fixable from the front of the room.
+- **Optional: a real project of your own.** The closing exercise plans adoption for your context. You do not need to open your employer's code in the room to do it.
+
+---
+
+## Setup
+
+**Prefer a ready-to-use container?** Open this repository in GitHub Codespaces,
+or run it locally with DevPod + Docker / VS Code Dev Containers. Follow
+[the container setup guide](./docs/DEVCONTAINER.md) instead of the manual steps
+below. It installs the latest AQE; you still use your own agent
+account and optional Stripe test keys.
+
+**1. Get this repo.** Clone it (or download the ZIP from the green **Code** button and unzip), then move into the folder:
+
+```bash
+git clone https://github.com/fndlalit/TTF-Agentic-QCSD-Workshop
+cd TTF-Agentic-QCSD-Workshop
+```
+
+> **Clone close to your home folder.** The code indexer skips any file more than ten directories deep, so `~/TTF-Agentic-QCSD-Workshop` works and `~/Documents/Conferences/2026/TokyoTestFest/tutorials/...` silently drops the API routes from the knowledge graph.
+
+**2. Install AQE and set it up for your coding agent.** Run these once, from inside the folder:
+
+```bash
+npm install -g agentic-qe@latest  # the latest published AQE CLI
+aqe init --auto                    # set up AQE for YOUR coding agent — see the table below
+```
+
+`aqe init --auto` configures **Claude Code** by default. Using a different coding agent? Add the matching flag — AQE works with **11 platforms** through a single MCP server:
+
+| Coding agent | `aqe init` command |
+|--------------|--------------------|
+| **Claude Code** | `aqe init --auto` (built-in) |
+| **GitHub Copilot** | `aqe init --auto --with-copilot` |
+| **Cursor** | `aqe init --auto --with-cursor` |
+| **Cline** | `aqe init --auto --with-cline` |
+| **OpenCode** | `aqe init --auto --with-opencode` |
+| **AWS Kiro** | `aqe init --auto --with-kiro` |
+| **Kilo Code** | `aqe init --auto --with-kilocode` |
+| **Roo Code** | `aqe init --auto --with-roocode` |
+| **OpenAI Codex CLI** | `aqe init --auto --with-codex` |
+| **Windsurf** | `aqe init --auto --with-windsurf` |
+| **Continue.dev** | `aqe init --auto --with-continuedev` |
+
+```bash
+aqe init --auto --with-all-platforms   # or just set up everything at once
+```
+
+**3. Install the demo app's dependencies.**
+
+```bash
+npm install
+```
+
+**4. Build the code knowledge graph.** Three commands in your terminal, before you open your coding agent:
+
+```bash
+aqe code index src/     # expect: 21 files indexed, 102 nodes, 117 edges, a few seconds
+aqe hg stats            # the same graph, counted by node type
+aqe memory usage        # your starting baseline: 21 entries, 81 vectors
+```
+
+This is static analysis plus a local embedding model. It needs no API key and spends no tokens. Run it in the terminal rather than asking your agent to do it, so the agent does not pay to relay the output.
+
+**5. Install the embedder.** AQE persists what the agents learn as patterns in a vector store, and the store needs an embedding model to write to. Without one it refuses the write and reports `VECTOR_SPACE_UNVERIFIED`, so every "Save learnings and persist patterns" in the exercises is a no-op and Exercise 5 has nothing to read back.
+
+```bash
+npm install -g @huggingface/transformers@4.2.0   # local embedder, 384-dim all-MiniLM-L6-v2
+# or point AQE at an embedding service you already trust:
+export AQE_EMBEDDER_ENDPOINT=...
+```
+
+AQE treats this package as an explicit security opt-in: its dependency chain currently carries two unresolved HIGH advisories (GHSA-xcpc-8h2w-3j85, GHSA-f88m-g3jw-g9cj). On a machine where you cannot install it, use the endpoint variable above, or run Exercise 5 from the reports as described in LAB.md.
+
+Confirm it took, and load the seed brain so Exercise 5 has substance even if an earlier exercise failed:
+
+```bash
+aqe learning import -i seed/aqe-seed-patterns.json
+aqe learning stats     # Total jumps from 0 to 76: AQE's own patterns plus your six
+```
+
+The import line can read `Imported: 0 · Skipped: 6` even when it worked. Trust `aqe learning stats`: if Total reads 76, the seed brain is loaded.
+
+**6. Launch your coding agent in this folder** — Claude Code, Copilot, Cursor, Kiro, Codex, Windsurf… whichever you have. This folder is your workspace root; all paths in LAB.md are relative to it. On first launch Claude Code asks you to trust the folder and to approve the `agentic-qe` MCP server. Accept both, or the skills and memory tools will not load.
+
+➡️ **Next:** open **[LAB.md](./LAB.md)** and start with Exercise 1.
+
+---
+
+## The demo app
+
+A six-product electronics storefront with a complete purchase flow — the *subject under test*, not the point of the workshop. It deliberately contains realistic quality issues (validation gaps, accessibility misses, fragile payment-retry logic, weak input handling) for the agents to find.
+
+- **Catalog** (`src/app/page.tsx`, `src/lib/products.ts`) — product grid with add-to-cart.
+- **Cart** (`src/app/cart`, `src/context/CartContext.tsx`) — client-side state via React context + reducer.
+- **Checkout** (`src/app/checkout`, `src/components/CheckoutForm.tsx`) — address + payment form (Stripe Elements), validation, guest checkout.
+- **Confirmation** (`src/app/confirmation`) — post-purchase summary.
+- **API routes** (`src/app/api`) — `create-payment-intent` and `orders`.
+- **Libraries** (`src/lib`) — card/Luhn validation, form/email validation, guest sessions, rate limiting, payment-retry with backoff, order-event publishing.
+
+**Tech stack:** Next.js 14 (App Router) · React 18 · TypeScript · Stripe · Tailwind CSS · Vitest + Testing Library.
+
+Test coverage is **intentionally uneven** — some modules and UI states are left untested on purpose, so there's real work for the agents.
+
+**Run the existing tests (optional):**
+
+```bash
+npm run test:run        # single run
+npm run test:coverage   # with coverage
+```
+
+---
+
+## License
+
+MIT — see [LICENSE](./LICENSE).
