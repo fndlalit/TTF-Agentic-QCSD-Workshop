@@ -4,6 +4,8 @@ Welcome 👋 This is the official repo for the half-day tutorial **The 70% Probl
 
 **Half-day tutorial · Thursday 12 November 2026 · 13:00 to 16:00 · Facilitators: Lalitkumar Bhamare and Dragan Spiridonov**
 
+> **Authorship and permitted use.** QCSD, Agentic QCSD and Designed Agency are the original work of Lalitkumar Bhamare, licensed under [CC BY 4.0](https://talesoftesting.com/qcsd/): reuse requires credit to him. The [Agentic QE](https://github.com/proffesor-for-testing/agentic-qe) framework is MIT open source by Dragan Spiridonov, with Lalitkumar Bhamare as key contributor. **The tutorial slides are all rights reserved: recreating, redistributing or republishing them without consulting Lalitkumar Bhamare and Dragan Spiridonov is forbidden.** Details: [NOTICE.md](./NOTICE.md).
+
 **Agentic QCSD** is about putting autonomous AI quality agents to work *across the whole delivery lifecycle*, not just generating tests, but reasoning about requirements, product risk, code quality, security, and accessibility the way a quality engineer would. In this session you'll drive a fleet of these agents (**[Agentic QE](https://github.com/proffesor-for-testing/agentic-qe)**) through four SDLC phases, watch what they surface *on their own*, and then judge their output with the **PACTS** lens (Proactive, Autonomous, Collaborative, Targeted, Structured).
 
 The catch: great agents need something real to chew on. So this repo also ships a small, deliberately-flawed e-commerce app as the **subject under test**: see [The demo app](#the-demo-app) below.
