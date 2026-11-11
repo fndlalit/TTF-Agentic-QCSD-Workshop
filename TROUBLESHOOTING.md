@@ -1,7 +1,7 @@
 # Troubleshooting
 
 Detail behind the short notes in [LAB.md](./LAB.md). You do not need any of this to
-run the workshop — it is here for anyone who hits one of these and wants to know why.
+run the workshop; it is here for anyone who hits one of these and wants to know why.
 
 ## `aqe learning import` prints the same thing whether it worked or not
 
@@ -14,18 +14,18 @@ The import always finishes with output of this shape:
 ```
 
 The CLI counts a pattern as "skipped" whenever the optional ANN index cannot be
-opened — including when SQLite, the authoritative store, took the write. So
+opened, including when SQLite, the authoritative store, took the write. So
 `Imported: 0` tells you nothing either way.
 
 `aqe learning stats` is the reliable check:
 
-- **`Total: 0`** — there is no embedder, nothing was stored, and nothing will be
+- **`Total: 0`**: there is no embedder, nothing was stored, and nothing will be
   until one is installed. See setup step 5 in the [README](./README.md), then
   re-run the import.
-- **`Total: 28`** — it worked, with a smaller base. `aqe learning stats` was run once
+- **`Total: 28`**: it worked, with a smaller base. `aqe learning stats` was run once
   before the embedder was installed, which uses up AQE's one-time cross-domain seeding.
   You have AQE's 22 base patterns plus your six. Exercise 5 works as written.
-- **`Total: 76`** — it worked: AQE's own foundational patterns plus your six. Do
+- **`Total: 76`**: it worked: AQE's own foundational patterns plus your six. Do
   not re-run the import. The total grows as the exercises store learnings.
 
 All three cases were confirmed on this repo with agentic-qe 3.14.1 and 3.14.8 (embedder present,
