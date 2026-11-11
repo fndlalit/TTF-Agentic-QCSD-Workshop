@@ -1,4 +1,4 @@
-# Workshop container — Codespaces or local Docker
+# Workshop container: Codespaces or local Docker
 
 For the **12 November 2026** Tokyo Test Fest tutorial, this is an alternative to the manual Setup
 in README. It uses the same app and exercises, **latest published AQE**, and local
