@@ -1584,6 +1584,13 @@ body.present #c6b.cur .mpdot{animation:mpflow 3.2s ease-in-out infinite;animatio
 #c4 .recog{padding-top:10px;padding-bottom:10px}
 .w7r{grid-template-columns:260px 1.25fr 1fr}
 .ttlhosts i a.lnk{color:inherit;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.35)}
+.pcflip{margin-top:14px;padding:10px 16px}
+.pcfh{display:flex;align-items:baseline;gap:18px;margin-bottom:8px}
+.pcfh .q{flex:none;margin:0}
+.pcfh p{margin:0;font-size:15px;color:var(--text-2,#cfcfe0)}
+.pcfh p b{color:#fff}
+.pcflip .flb{grid-template-columns:190px 1fr}
+.pcflip .b7030{height:38px;font-size:16px}
 body,button,input{font-family:Inter,"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic","Meiryo","Noto Sans JP",sans-serif}
 </style>
 </head>
@@ -1716,8 +1723,8 @@ body,button,input{font-family:Inter,"Hiragino Sans","Hiragino Kaku Gothic ProN",
   <div class="support"><span class="q">支援活動</span><div><span data-ic="search">テスト容易性改善セッション</span><span data-ic="users">隔週のテスター交流会</span><span data-ic="refresh">自動テストスイートの定期評価</span><span data-ic="pulse">本番エラーログからの学び</span></div></div>
   <button class="btn ghost nextc" data-next="c4">次へ: 成果 ↓</button>
 </section><section class="chap" id="c4" data-notes="">
-  <div class="sh"><h2 class="st">QCSD はチーム全体の 70/30 の比率をどう逆転させたか</h2><span class="sn">セクション 03 · Quality Conscious Software Delivery</span></div>
-  <p class="ss">すべての役割で、認知的な仕事をビルドの前に移しました。リリースごとのリードタイムがその結果を示しています。</p>
+  <div class="sh"><h2 class="st">QCSD は上流での厳密さを機能させた</h2><span class="sn">セクション 03 · Quality Conscious Software Delivery</span></div>
+  <p class="ss">上流での厳密さは理想ではなく、チームの仕事のやり方になりました。リリースごとのリードタイムがそれを示しています。</p>
   <div class="c4grid">
     <div class="card">
       <div class="ltlegend"><span><i style="background:#9FD8D3"></i>開発中</span><span><i style="background:#6E7690"></i>ブロック</span><span><i style="background:#00A08A"></i>QA 中</span><span><i class="med"></i>導入前の中央値</span></div>
@@ -1732,11 +1739,7 @@ body,button,input{font-family:Inter,"Hiragino Sans","Hiragino Kaku Gothic ProN",
       
     </div>
   </div>
-    <div class="c4flip">
-    <span class="q">チーム全体の 70/30 の比率</span>
-    <div class="flb"><span class="flbl">QCSD 導入前</span><div class="b7030"><div class="b70">70% 事務作業とプロセスの仕事</div><div class="b30">30% 認知的な仕事</div></div>
-    <span class="flbl">QCSD 導入後</span><div class="frag" data-act="flip"><div class="b7030 fla" id="flbar"><div class="b70"><i class="s1">70% 事務作業とプロセスの仕事</i><i class="s2">30% 事務作業</i></div><div class="b30"><i class="s1">30% 認知的な仕事</i><i class="s2">70% 認知的な仕事: リスク、基準、テスト容易性、探索</i></div></div></div></div>
-  </div>
+    
   <div class="recog">
     <span class="q">評価と普及</span>
     <div class="recgrid">
@@ -1765,7 +1768,11 @@ body,button,input{font-family:Inter,"Hiragino Sans","Hiragino Kaku Gothic ProN",
   <div class="mpt"><div class="mphead"><div></div><div class="mphq"><span>QCSD · 2019年から</span><b>人が行うセッション</b></div><div></div><div class="mpha"><span>Agentic QCSD · 現在</span><b>Agentic QE のスウォームまたは AI エージェントが担う</b></div></div><div class="mpg" style="--pc:var(--purple-l)"><div class="mpph">アイデア出し</div><div class="mpitems"><div class="mprow" style="--i:0"><div class="mpq">アイデア出し前の要件確認</div><div class="mparr"><i class="mpdot"></i></div><div class="mpa sk"><span class="mpic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5l2.3 6.2 6.2 2.3-6.2 2.3L12 19.5l-2.3-6.2-6.2-2.3 6.2-2.3z"/></svg></span><span class="mpt">testability scoring</span><em>スキル</em></div></div><div class="mprow" style="--i:4"><div class="mpq">QX セッション</div><div class="mparr"><i class="mpdot"></i></div><div class="mpa ag"><span class="mpic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="8" width="14" height="11" rx="3"/><path d="M12 4v4M9 13h.01M15 13h.01M9.5 16.5h5M3 12v3M21 12v3"/><circle cx="12" cy="3.5" r="1"/></svg></span><span class="mpt">qe-qx-partner</span><em>AI エージェント</em></div></div><div class="mprow" style="--i:5"><div class="mpq">インパクトマッピング</div><div class="mparr"><i class="mpdot"></i></div><div class="mpa hum"><span class="mpic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></span><span class="mpt">人が行うセッション · 根拠集めは qe-qx-partner</span><em>人が行うセッション</em></div></div></div></div><div class="mpg" style="--pc:var(--teal-l)"><div class="mpph">リファインメント</div><div class="mpitems"><div class="mprow" style="--i:6"><div class="mpq">SFDIPOT によるストーリー分析</div><div class="mparr"><i class="mpdot"></i></div><div class="mpa sw"><span class="mpic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="8.5" y="3" width="7" height="6" rx="1.6"/><path d="M12.0 3v-1.6"/><rect x="2" y="14" width="7" height="6" rx="1.6"/><path d="M5.5 14v-1.6"/><rect x="15" y="14" width="7" height="6" rx="1.6"/><path d="M18.5 14v-1.6"/><path d="M9 10.5 6.5 13.5M15 10.5l2.5 3M9.5 17h5" stroke-dasharray="1.5 1.5"/></svg></span><span class="mpt">qcsd-refinement-swarm</span><em>スウォーム</em></div></div><div class="mprow" style="--i:7"><div class="mpq">プロダクトカバレッジセッション</div><div class="mparr"><i class="mpdot"></i></div><div class="mpa ag"><span class="mpic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="8" width="14" height="11" rx="3"/><path d="M12 4v4M9 13h.01M15 13h.01M9.5 16.5h5M3 12v3M21 12v3"/><circle cx="12" cy="3.5" r="1"/></svg></span><span class="mpt">qe-product-factors-assessor</span><em>AI エージェント</em></div></div></div></div><div class="mpg" style="--pc:var(--blue-l)"><div class="mpph">開発</div><div class="mpitems"><div class="mprow" style="--i:8"><div class="mpq">受け入れ基準に対する開発者テスト</div><div class="mparr"><i class="mpdot"></i></div><div class="mpa ag"><span class="mpic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="8" width="14" height="11" rx="3"/><path d="M12 4v4M9 13h.01M15 13h.01M9.5 16.5h5M3 12v3M21 12v3"/><circle cx="12" cy="3.5" r="1"/></svg></span><span class="mpt">qe-test-architect</span><em>AI エージェント</em></div></div><div class="mprow" style="--i:9"><div class="mpq">コード品質チェック</div><div class="mparr"><i class="mpdot"></i></div><div class="mpa sw"><span class="mpic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="8.5" y="3" width="7" height="6" rx="1.6"/><path d="M12.0 3v-1.6"/><rect x="2" y="14" width="7" height="6" rx="1.6"/><path d="M5.5 14v-1.6"/><rect x="15" y="14" width="7" height="6" rx="1.6"/><path d="M18.5 14v-1.6"/><path d="M9 10.5 6.5 13.5M15 10.5l2.5 3M9.5 17h5" stroke-dasharray="1.5 1.5"/></svg></span><span class="mpt">qcsd-development-swarm</span><em>スウォーム</em></div></div></div></div><div class="mpg" style="--pc:var(--amber-l)"><div class="mpph">CI/CD</div><div class="mpitems"><div class="mprow" style="--i:10"><div class="mpq">自動品質ゲート</div><div class="mparr"><i class="mpdot"></i></div><div class="mpa sw"><span class="mpic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="8.5" y="3" width="7" height="6" rx="1.6"/><path d="M12.0 3v-1.6"/><rect x="2" y="14" width="7" height="6" rx="1.6"/><path d="M5.5 14v-1.6"/><rect x="15" y="14" width="7" height="6" rx="1.6"/><path d="M18.5 14v-1.6"/><path d="M9 10.5 6.5 13.5M15 10.5l2.5 3M9.5 17h5" stroke-dasharray="1.5 1.5"/></svg></span><span class="mpt">qcsd-cicd-swarm · qe-queen-coordinator</span><em>スウォーム</em></div></div></div></div><div class="mpg" style="--pc:var(--green-l)"><div class="mpph">本番運用</div><div class="mpitems"><div class="mprow" style="--i:11"><div class="mpq">本番テレメトリとエラーログ</div><div class="mparr"><i class="mpdot"></i></div><div class="mpa sw"><span class="mpic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="8.5" y="3" width="7" height="6" rx="1.6"/><path d="M12.0 3v-1.6"/><rect x="2" y="14" width="7" height="6" rx="1.6"/><path d="M5.5 14v-1.6"/><rect x="15" y="14" width="7" height="6" rx="1.6"/><path d="M18.5 14v-1.6"/><path d="M9 10.5 6.5 13.5M15 10.5l2.5 3M9.5 17h5" stroke-dasharray="1.5 1.5"/></svg></span><span class="mpt">qcsd-production-swarm</span><em>スウォーム</em></div></div></div></div></div>
   <div id="maprows" hidden></div>
   
-  <div class="tritoo card" style="margin-top:18px"><span data-ic="spark"></span><div><b>コスト、スピード、品質を同時に。</b> かつては人日単位のコストがかかった厳密さが、人による判断ゲートをすべて残したまま、スプリントの速度で回ります。</div></div>
+  <div class="c4flip pcflip frag" data-act="flip">
+    <div class="pcfh"><span class="q">チーム全体の 70/30 の比率</span><p><b>コスト、スピード、品質を同時に。</b> かつては人日単位のコストがかかった厳密さが、人による判断ゲートをすべて残したまま、スプリントの速度で回ります。</p></div>
+    <div class="flb"><span class="flbl">AI エージェントなし</span><div class="b7030"><div class="b70">70% 事務作業とプロセスの仕事</div><div class="b30">30% 認知的な仕事</div></div>
+    <span class="flbl">Agentic QCSD あり</span><div class="b7030 fla" id="flbar"><div class="b70"><i class="s1">70% 事務作業とプロセスの仕事</i><i class="s2">30% 事務作業</i></div><div class="b30"><i class="s1">30% 認知的な仕事</i><i class="s2">70% 認知的な仕事: リスク、基準、テスト容易性、探索</i></div></div></div>
+  </div>
   <button class="btn ghost nextc" data-next="csym">次へ: 症状と手法 ↓</button>
 </section><section class="chap" id="arch" data-notes="">
   <div class="sh"><h2 class="st">Agentic QCSD: その下にあるもの</h2><span class="sn">セクション 05 · Agentic QCSD: 置き換えではなく増幅</span></div>
