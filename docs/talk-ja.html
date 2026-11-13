@@ -2350,6 +2350,58 @@ body{display:flex;flex-direction:column;padding:0}
 .dgrid{margin-top:0!important;flex:1;min-height:0;height:100%}
 .dcol{border-top-color:#2A2A40!important}
 body{padding-bottom:34px}
+/* demo report polish */
+body{padding:0 0 26px!important}
+.dgrid{display:grid!important;grid-template-columns:1fr 1.12fr 1.08fr!important;gap:20px!important;align-items:stretch}
+.dcol{background:linear-gradient(180deg,#16161F 0%,#111118 100%)!important;border:1px solid rgba(255,255,255,.09)!important;border-radius:18px!important;padding:24px 28px 22px!important;box-shadow:0 18px 40px -24px rgba(0,0,0,.8)}
+.dcol&gt;h5{font-size:16px!important;letter-spacing:.18em!important;color:#C9A0FF!important;margin:0 0 18px!important;padding:0 0 14px;border-bottom:1px solid rgba(255,255,255,.08);font-weight:700!important}
+.doc{font-size:21px!important;line-height:1.45!important;color:#A9A9BA!important;margin-bottom:18px!important}
+.doc b{color:#fff;font-size:23px}
+/* demo 1: journey shots */
+.shots{flex:1;display:flex!important;flex-direction:column;justify-content:space-between!important;gap:14px!important}
+.shot{gap:18px!important;padding:10px;border-radius:12px;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.06)}
+.shot img{width:168px!important;height:104px!important;max-height:none!important;object-fit:cover;object-position:top}
+.shot b{font-size:23px!important;line-height:1.2!important}.shot i{font-size:18px!important}
+/* bars */
+.bars{display:flex;flex-direction:column;gap:6px}
+.bars .row{font-size:21px!important;margin-bottom:10px!important;gap:14px!important}
+.bars .row span{width:150px!important;color:#D6D6E2}
+.bars .row .tr{height:16px!important;border-radius:8px!important;background:rgba(255,255,255,.07)!important}
+.bars .row .tr i{background:linear-gradient(90deg,#3FC9A8,#6EE7CB)!important;border-radius:8px}
+.bars .row b{font-size:24px!important;width:52px!important;font-variant-numeric:tabular-nums}
+.log{font-size:16px!important;height:84px!important;color:#9FE9DB!important}
+/* kpis + findings */
+.kpis{gap:10px!important;margin-bottom:16px!important}
+.kpi{background:rgba(255,255,255,.05)!important;border:1px solid rgba(255,255,255,.07);border-radius:12px!important;padding:12px 6px!important}
+.kpi b{font-size:40px!important}.kpi span{font-size:15px!important;letter-spacing:.04em}
+.stack{gap:8px!important}
+.fc{padding:9px 14px!important;border-left-width:5px!important;background:rgba(255,255,255,.045)!important;border-radius:10px!important}
+.fc img{width:64px!important;height:40px!important}
+.fc .x{font-size:17px!important;line-height:1.3!important}
+.fc .x i{font-size:13px!important;margin-right:8px!important;color:#FF8C96!important;font-weight:700}
+.verdict{font-size:18px!important;padding:12px 16px!important}
+.decide{font-size:18px!important;padding:12px 16px!important;background:rgba(255,255,255,.045)!important}
+.btns span{font-size:17px!important;padding:8px 4px!important}
+.kfoot{font-size:15px!important}
+.cta{font-size:20px!important;padding:11px 20px!important;border-radius:10px!important;margin-top:14px!important}
+/* demo 2: sections + agents */
+.sec{font-size:19px!important;padding:8px 12px!important;margin-bottom:6px!important}
+.ag{padding:8px 12px!important;margin-bottom:6px!important;gap:12px!important;background:rgba(255,255,255,.04)!important}
+.ag .t b{font-size:18px!important}.ag .t i{font-size:14px!important}
+.ag .c{font-size:24px!important;min-width:36px!important}
+.ag .d{width:12px!important;height:12px!important}
+/* demo 3: chips + ledger */
+.chips{gap:8px!important}
+.chip{font-size:18px!important;padding:6px 12px!important}
+.ledger .r{font-size:17px!important;padding:9px 12px!important;margin-bottom:7px!important;background:rgba(255,255,255,.045)!important}
+.ledger .r em{font-size:12px!important;width:92px!important;padding:4px 6px!important}
+.bars{flex:1;justify-content:space-around;padding:4px 0}
+.bars .row{margin-bottom:0!important}
+.fc .x{font-size:18px!important}
+.ledger{flex:1;display:flex;flex-direction:column;justify-content:flex-start}
+.ledger .r{font-size:18px!important}
+.ag .t b{font-size:19px!important}.ag .t i{font-size:15px!important}
+.sec{font-size:20px!important}
 body,button{font-family:Inter,&quot;Hiragino Sans&quot;,&quot;Hiragino Kaku Gothic ProN&quot;,&quot;Yu Gothic UI&quot;,&quot;Yu Gothic&quot;,&quot;Meiryo&quot;,&quot;Noto Sans JP&quot;,sans-serif}
 &lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;div class=&quot;dgrid&quot;&gt;&lt;/div&gt;&lt;script&gt;const TH={&quot;hero&quot;: &quot;talk-img-cad661daad.jpg&quot;, &quot;cards&quot;: &quot;talk-img-96cea09db8.jpg&quot;, &quot;cta&quot;: &quot;talk-img-e465736827.jpg&quot;};
 const $=(sel,root)=&gt; (root||document).querySelector(sel);
@@ -2794,6 +2846,58 @@ body{display:flex;flex-direction:column;padding:0}
 .dgrid{margin-top:0!important;flex:1;min-height:0;height:100%}
 .dcol{border-top-color:#2A2A40!important}
 body{padding-bottom:34px}
+/* demo report polish */
+body{padding:0 0 26px!important}
+.dgrid{display:grid!important;grid-template-columns:1fr 1.12fr 1.08fr!important;gap:20px!important;align-items:stretch}
+.dcol{background:linear-gradient(180deg,#16161F 0%,#111118 100%)!important;border:1px solid rgba(255,255,255,.09)!important;border-radius:18px!important;padding:24px 28px 22px!important;box-shadow:0 18px 40px -24px rgba(0,0,0,.8)}
+.dcol&gt;h5{font-size:16px!important;letter-spacing:.18em!important;color:#C9A0FF!important;margin:0 0 18px!important;padding:0 0 14px;border-bottom:1px solid rgba(255,255,255,.08);font-weight:700!important}
+.doc{font-size:21px!important;line-height:1.45!important;color:#A9A9BA!important;margin-bottom:18px!important}
+.doc b{color:#fff;font-size:23px}
+/* demo 1: journey shots */
+.shots{flex:1;display:flex!important;flex-direction:column;justify-content:space-between!important;gap:14px!important}
+.shot{gap:18px!important;padding:10px;border-radius:12px;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.06)}
+.shot img{width:168px!important;height:104px!important;max-height:none!important;object-fit:cover;object-position:top}
+.shot b{font-size:23px!important;line-height:1.2!important}.shot i{font-size:18px!important}
+/* bars */
+.bars{display:flex;flex-direction:column;gap:6px}
+.bars .row{font-size:21px!important;margin-bottom:10px!important;gap:14px!important}
+.bars .row span{width:150px!important;color:#D6D6E2}
+.bars .row .tr{height:16px!important;border-radius:8px!important;background:rgba(255,255,255,.07)!important}
+.bars .row .tr i{background:linear-gradient(90deg,#3FC9A8,#6EE7CB)!important;border-radius:8px}
+.bars .row b{font-size:24px!important;width:52px!important;font-variant-numeric:tabular-nums}
+.log{font-size:16px!important;height:84px!important;color:#9FE9DB!important}
+/* kpis + findings */
+.kpis{gap:10px!important;margin-bottom:16px!important}
+.kpi{background:rgba(255,255,255,.05)!important;border:1px solid rgba(255,255,255,.07);border-radius:12px!important;padding:12px 6px!important}
+.kpi b{font-size:40px!important}.kpi span{font-size:15px!important;letter-spacing:.04em}
+.stack{gap:8px!important}
+.fc{padding:9px 14px!important;border-left-width:5px!important;background:rgba(255,255,255,.045)!important;border-radius:10px!important}
+.fc img{width:64px!important;height:40px!important}
+.fc .x{font-size:17px!important;line-height:1.3!important}
+.fc .x i{font-size:13px!important;margin-right:8px!important;color:#FF8C96!important;font-weight:700}
+.verdict{font-size:18px!important;padding:12px 16px!important}
+.decide{font-size:18px!important;padding:12px 16px!important;background:rgba(255,255,255,.045)!important}
+.btns span{font-size:17px!important;padding:8px 4px!important}
+.kfoot{font-size:15px!important}
+.cta{font-size:20px!important;padding:11px 20px!important;border-radius:10px!important;margin-top:14px!important}
+/* demo 2: sections + agents */
+.sec{font-size:19px!important;padding:8px 12px!important;margin-bottom:6px!important}
+.ag{padding:8px 12px!important;margin-bottom:6px!important;gap:12px!important;background:rgba(255,255,255,.04)!important}
+.ag .t b{font-size:18px!important}.ag .t i{font-size:14px!important}
+.ag .c{font-size:24px!important;min-width:36px!important}
+.ag .d{width:12px!important;height:12px!important}
+/* demo 3: chips + ledger */
+.chips{gap:8px!important}
+.chip{font-size:18px!important;padding:6px 12px!important}
+.ledger .r{font-size:17px!important;padding:9px 12px!important;margin-bottom:7px!important;background:rgba(255,255,255,.045)!important}
+.ledger .r em{font-size:12px!important;width:92px!important;padding:4px 6px!important}
+.bars{flex:1;justify-content:space-around;padding:4px 0}
+.bars .row{margin-bottom:0!important}
+.fc .x{font-size:18px!important}
+.ledger{flex:1;display:flex;flex-direction:column;justify-content:flex-start}
+.ledger .r{font-size:18px!important}
+.ag .t b{font-size:19px!important}.ag .t i{font-size:15px!important}
+.sec{font-size:20px!important}
 body,button{font-family:Inter,&quot;Hiragino Sans&quot;,&quot;Hiragino Kaku Gothic ProN&quot;,&quot;Yu Gothic UI&quot;,&quot;Yu Gothic&quot;,&quot;Meiryo&quot;,&quot;Noto Sans JP&quot;,sans-serif}
 &lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;div class=&quot;dgrid&quot;&gt;&lt;/div&gt;&lt;script&gt;const BD={&quot;agents&quot;: [{&quot;name&quot;: &quot;qe-requirements-validator&quot;, &quot;n&quot;: 9, &quot;label&quot;: &quot;成果の検証可能性（観測できる指標があるか）&quot;}, {&quot;name&quot;: &quot;qe-quality-criteria-recommender&quot;, &quot;n&quot;: 7, &quot;label&quot;: &quot;HTSM v6.3 の品質特性: この機能で重要な特性はどれか（機能性、信頼性、使用性、魅力、セキュリティ、性能、拡張性…&quot;}, {&quot;name&quot;: &quot;qe-dependency-mapper&quot;, &quot;n&quot;: 6, &quot;label&quot;: &quot;隠れた依存関係、連鎖リスク、タイミングの結合。&quot;}, {&quot;name&quot;: &quot;qe-risk-assessor&quot;, &quot;n&quot;: 6, &quot;label&quot;: &quot;対処が不十分なリスク&quot;}, {&quot;name&quot;: &quot;qe-devils-advocate&quot;, &quot;n&quot;: 5, &quot;label&quot;: &quot;組み込まれた前提を疑う。&quot;}, {&quot;name&quot;: &quot;qe-product-factors-assessor&quot;, &quot;n&quot;: 5, &quot;label&quot;: &quot;SFDIPOT の7要素カバレッジ分析: 構造、機能、データ、連携、基盤、運用、時間。&quot;}, {&quot;name&quot;: &quot;qe-security-auditor&quot;, &quot;n&quot;: 4, &quot;label&quot;: &quot;セキュリティ態勢とコンプライアンスの範囲: PCI / GDPR / CCPA / 規制上の影響、認証と認可のモデル、監査証跡の要件、IDOR のリスク…&quot;}, {&quot;name&quot;: &quot;qe-qx-partner&quot;, &quot;n&quot;: 3, &quot;label&quot;: &quot;23 の UX ヒューリスティック（H1.1–H7.4）、オラクル問題（ユーザーとビジネスの対立、不明確な品質基準）、3の法則による故障モード、見える/見えない…&quot;}], &quot;findings&quot;: [{&quot;id&quot;: &quot;F-001&quot;, &quot;sev&quot;: &quot;HIGH&quot;, &quot;section&quot;: &quot;依存関係とリスク&quot;, &quot;title&quot;: &quot;SHOP-2884（オフライン契約インポートシステム）が依存関係として明示的に必要とされているが、依存関係のセクションにない&quot;, &quot;agents&quot;: [&quot;qe-dependency-mapper&quot;]}, {&quot;id&quot;: &quot;F-002&quot;, &quot;sev&quot;: &quot;HIGH&quot;, &quot;section&quot;: &quot;ビジネスルール&quot;, &quot;title&quot;: &quot;BR-CURR-01 が取引通貨を「顧客 ID」から導出しており、認証済みセッションに紐づけていない: 仕様レベルでの IDOR 攻撃面&quot;, &quot;agents&quot;: [&quot;qe-dependency-mapper&quot;, &quot;qe-devils-advocate&quot;, &quot;qe-product-factors-assessor&quot;, &quot;qe-qx-partner&quot;, &quot;qe-security-auditor&quot;]}, {&quot;id&quot;: &quot;F-003&quot;, &quot;sev&quot;: &quot;HIGH&quot;, &quot;section&quot;: &quot;プロセスモデル&quot;, &quot;title&quot;: &quot;国と通貨の許可テーブルのタイミングゲート: 責任者が未宣言で、対応する依存関係の記載もなく、テクニカルディスカバリーを妨げている&quot;, &quot;agents&quot;: [&quot;qe-dependency-mapper&quot;, &quot;qe-product-factors-assessor&quot;, &quot;qe-quality-criteria-recommender&quot;, &quot;qe-requirements-validator&quot;, &quot;qe-risk-assessor&quot;, &quot;qe-security-auditor&quot;]}, {&quot;id&quot;: &quot;F-004&quot;, &quot;sev&quot;: &quot;HIGH&quot;, &quot;section&quot;: &quot;エグゼクティブサマリー&quot;, &quot;title&quot;: &quot;T1 の KPI について、ビジネス要件に計測基盤の非機能要件がない&quot;, &quot;agents&quot;: [&quot;qe-dependency-mapper&quot;, &quot;qe-devils-advocate&quot;, &quot;qe-product-factors-assessor&quot;, &quot;qe-quality-criteria-recommender&quot;, &quot;qe-requirements-validator&quot;, &quot;qe-risk-assessor&quot;]}, {&quot;id&quot;: &quot;F-005&quot;, &quot;sev&quot;: &quot;HIGH&quot;, &quot;section&quot;: &quot;依存関係とリスク&quot;, &quot;title&quot;: &quot;BR2.6 は BR3.3 で参照されているが、文書のどこにも定義されていない&quot;, &quot;agents&quot;: [&quot;qe-dependency-mapper&quot;, &quot;qe-product-factors-assessor&quot;, &quot;qe-quality-criteria-recommender&quot;, &quot;qe-requirements-validator&quot;, &quot;qe-risk-assessor&quot;]}, {&quot;id&quot;: &quot;F-006&quot;, &quot;sev&quot;: &quot;HIGH&quot;, &quot;section&quot;: &quot;ビジネスルール&quot;, &quot;title&quot;: &quot;プライスブック欠落時の異常系は認識されているが未解決: ドイツでの $32M の経路を妨げている&quot;, &quot;agents&quot;: [&quot;qe-quality-criteria-recommender&quot;]}, {&quot;id&quot;: &quot;F-007&quot;, &quot;sev&quot;: &quot;HIGH&quot;, &quot;section&quot;: &quot;プロセスモデル&quot;, &quot;title&quot;: &quot;BR2.1 が求める SHOP-2884 のオフラインインポート範囲の決定がない: 通貨検証のギャップが未解決&quot;, &quot;agents&quot;: [&quot;qe-requirements-validator&quot;]}, {&quot;id&quot;: &quot;F-008&quot;, &quot;sev&quot;: &quot;HIGH&quot;, &quot;section&quot;: &quot;課題と成果&quot;, &quot;title&quot;: &quot;EU の顧客 PII を含む監査記録に、GDPR の保持期間やデータ所在の要件がない&quot;, &quot;agents&quot;: [&quot;qe-qx-partner&quot;, &quot;qe-requirements-validator&quot;, &quot;qe-security-auditor&quot;]}, {&quot;id&quot;: &quot;F-009&quot;, &quot;sev&quot;: &quot;HIGH&quot;, &quot;section&quot;: &quot;ビジネス要件&quot;, &quot;title&quot;: &quot;二者承認の監査証跡が期限切れの変更しか対象にしていない: 成功した承認が記録されない&quot;, &quot;agents&quot;: [&quot;qe-security-auditor&quot;]}, {&quot;id&quot;: &quot;F-010&quot;, &quot;sev&quot;: &quot;MEDIUM&quot;, &quot;section&quot;: &quot;課題と成果&quot;, &quot;title&quot;: &quot;財務の第2通貨データソース（KPI 目標と GMV 市場規模の根拠）が依存関係として宣言されていない&quot;, &quot;agents&quot;: [&quot;qe-dependency-mapper&quot;]}, {&quot;id&quot;: &quot;F-011&quot;, &quot;sev&quot;: &quot;MEDIUM&quot;, &quot;section&quot;: &quot;課題と成果&quot;, &quot;title&quot;: &quot;GMV capture target assumes offline enterprise customers will self-migrate digitally at &gt;80% rate without behavioral evidence&quot;, &quot;agents&quot;: [&quot;qe-devils-advocate&quot;, &quot;qe-quality-criteria-recommender&quot;]}, {&quot;id&quot;: &quot;F-012&quot;, &quot;sev&quot;: &quot;MEDIUM&quot;, &quot;section&quot;: &quot;依存関係とリスク&quot;, &quot;title&quot;: &quot;文書内で複数のリスクが明示されているのに、リスクのセクションが空になっている&quot;, &quot;agents&quot;: [&quot;qe-devils-advocate&quot;]}, {&quot;id&quot;: &quot;F-013&quot;, &quot;sev&quot;: &quot;MEDIUM&quot;, &quot;section&quot;: &quot;ビジネス要件&quot;, &quot;title&quot;: &quot;拡張は更新日に限定されているが、更新期間外に試みたときのユーザー向けの伝え方の要件がない&quot;, &quot;agents&quot;: [&quot;qe-product-factors-assessor&quot;, &quot;qe-qx-partner&quot;]}, {&quot;id&quot;: &quot;F-014&quot;, &quot;sev&quot;: &quot;MEDIUM&quot;, &quot;section&quot;: &quot;ビジネス要件&quot;, &quot;title&quot;: &quot;改ざん不可の監査ログに、保持期間や耐久性の非機能要件がない&quot;, &quot;agents&quot;: [&quot;qe-quality-criteria-recommender&quot;]}, {&quot;id&quot;: &quot;F-015&quot;, &quot;sev&quot;: &quot;MEDIUM&quot;, &quot;section&quot;: &quot;ビジネス要件&quot;, &quot;title&quot;: &quot;更新/拡張の金融取引に冪等性の要件がない&quot;, &quot;agents&quot;: [&quot;qe-quality-criteria-recommender&quot;]}, {&quot;id&quot;: &quot;F-016&quot;, &quot;sev&quot;: &quot;MEDIUM&quot;, &quot;section&quot;: &quot;ビジネス要件&quot;, &quot;title&quot;: &quot;C-018 が CRAWL の範囲と矛盾: 「更新や拡張はサポートしない」が BR1.1 と C-016 に反する&quot;, &quot;agents&quot;: [&quot;qe-requirements-validator&quot;]}, {&quot;id&quot;: &quot;F-017&quot;, &quot;sev&quot;: &quot;MEDIUM&quot;, &quot;section&quot;: &quot;課題と成果&quot;, &quot;title&quot;: &quot;多通貨対応がコンバージョン率ではなく平均注文額を押し上げる理由が示されていない&quot;, &quot;agents&quot;: [&quot;qe-requirements-validator&quot;]}, {&quot;id&quot;: &quot;F-018&quot;, &quot;sev&quot;: &quot;MEDIUM&quot;, &quot;section&quot;: &quot;ビジネス要件&quot;, &quot;title&quot;: &quot;CRAWL は、作り直しなしで WALK の Land フローを可能にする具体的な拡張ポイントを示していない&quot;, &quot;agents&quot;: [&quot;qe-requirements-validator&quot;]}, {&quot;id&quot;: &quot;F-019&quot;, &quot;sev&quot;: &quot;MEDIUM&quot;, &quot;section&quot;: &quot;ビジネス要件&quot;, &quot;title&quot;: &quot;機能は CRAWL 段階を定めているが、WALK や RUN の能力についての North Star の記述がない&quot;, &quot;agents&quot;: [&quot;qe-requirements-validator&quot;]}, {&quot;id&quot;: &quot;F-020&quot;, &quot;sev&quot;: &quot;MEDIUM&quot;, &quot;section&quot;: &quot;フェーズ分け&quot;, &quot;title&quot;: &quot;US オペレーターモデルと Customer-SoR-Currency の非互換性は資料で認識されているが、リスクのセクションにない&quot;, &quot;agents&quot;: [&quot;qe-risk-assessor&quot;]}, {&quot;id&quot;: &quot;F-021&quot;, &quot;sev&quot;: &quot;MEDIUM&quot;, &quot;section&quot;: &quot;ビジネスルール&quot;, &quot;title&quot;: &quot;ソフトウェア以外のホスト型事業のプライスブック経路が明示的に未定義: GMV 目標の一部にデジタルのセルフサービス経路がない&quot;, &quot;agents&quot;: [&quot;qe-risk-assessor&quot;]}, {&quot;id&quot;: &quot;F-022&quot;, &quot;sev&quot;: &quot;MEDIUM&quot;, &quot;section&quot;: &quot;課題と成果&quot;, &quot;title&quot;: &quot;通貨拒否率の目標に本番監視の要件がない: リリース後、CURRENCY_NOT_PERMITTED イベントが見えない&quot;, &quot;agents&quot;: [&quot;qe-risk-assessor&quot;]}, {&quot;id&quot;: &quot;F-023&quot;, &quot;sev&quot;: &quot;LOW&quot;, &quot;section&quot;: &quot;課題と成果&quot;, &quot;title&quot;: &quot;トルコが、TCMB/BDDK 規制下での米ドル建て B2B デジタル取引の実現性を検証しないまま、EU/日本の CRAWL 市場とまとめられている&quot;, &quot;agents&quot;: [&quot;qe-devils-advocate&quot;]}]};
 const $=(sel,root)=&gt; (root||document).querySelector(sel);
@@ -2808,7 +2912,7 @@ async function demoBD(root,t){
   const w=mkWait(t);
   const secs=[&#x27;エグゼクティブサマリー&#x27;,&#x27;課題と成果&#x27;,&#x27;ビジネス要件&#x27;,&#x27;ビジネスルール&#x27;,&#x27;プロセスモデル&#x27;,&#x27;依存関係とリスク&#x27;,&#x27;フェーズ分け&#x27;];
   root.innerHTML=`
-  &lt;div class=&quot;dcol&quot;&gt;&lt;h5&gt;チームが持ち込むもの&lt;/h5&gt;&lt;div class=&quot;doc&quot;&gt;&lt;b&gt;ビジネスディスカバリー文書&lt;/b&gt;&lt;br&gt;SHOP-4107 · Renew and Expand&lt;br&gt;架空の小売企業&lt;/div&gt;&lt;div id=&quot;secs&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;dcol&quot;&gt;&lt;h5&gt;チームが持ち込むもの&lt;/h5&gt;&lt;div class=&quot;doc&quot;&gt;&lt;b&gt;ビジネスディスカバリー文書&lt;/b&gt;&lt;br&gt;SHOP-4107 · EC プラットフォーム&lt;br&gt;架空の小売企業&lt;/div&gt;&lt;div id=&quot;secs&quot;&gt;&lt;/div&gt;&lt;/div&gt;
   &lt;div class=&quot;dcol&quot;&gt;&lt;h5&gt;8つの AI エージェントがレビュー&lt;/h5&gt;&lt;div id=&quot;ags&quot;&gt;&lt;/div&gt;&lt;div class=&quot;log&quot; id=&quot;log&quot;&gt;&lt;/div&gt;&lt;/div&gt;
   &lt;div class=&quot;dcol&quot;&gt;&lt;h5&gt;返ってくるもの&lt;/h5&gt;
     &lt;div class=&quot;kpis&quot;&gt;&lt;div class=&quot;kpi&quot;&gt;&lt;b id=&quot;k0&quot;&gt;0&lt;/b&gt;&lt;span&gt;件の発見&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;kpi hi&quot;&gt;&lt;b id=&quot;k1&quot;&gt;0&lt;/b&gt;&lt;span&gt;高&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;kpi med&quot;&gt;&lt;b id=&quot;k2&quot;&gt;0&lt;/b&gt;&lt;span&gt;中&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;kpi low&quot;&gt;&lt;b id=&quot;k3&quot;&gt;0&lt;/b&gt;&lt;span&gt;低&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
@@ -3247,6 +3351,58 @@ body{display:flex;flex-direction:column;padding:0}
 .dgrid{margin-top:0!important;flex:1;min-height:0;height:100%}
 .dcol{border-top-color:#2A2A40!important}
 body{padding-bottom:34px}
+/* demo report polish */
+body{padding:0 0 26px!important}
+.dgrid{display:grid!important;grid-template-columns:1fr 1.12fr 1.08fr!important;gap:20px!important;align-items:stretch}
+.dcol{background:linear-gradient(180deg,#16161F 0%,#111118 100%)!important;border:1px solid rgba(255,255,255,.09)!important;border-radius:18px!important;padding:24px 28px 22px!important;box-shadow:0 18px 40px -24px rgba(0,0,0,.8)}
+.dcol&gt;h5{font-size:16px!important;letter-spacing:.18em!important;color:#C9A0FF!important;margin:0 0 18px!important;padding:0 0 14px;border-bottom:1px solid rgba(255,255,255,.08);font-weight:700!important}
+.doc{font-size:21px!important;line-height:1.45!important;color:#A9A9BA!important;margin-bottom:18px!important}
+.doc b{color:#fff;font-size:23px}
+/* demo 1: journey shots */
+.shots{flex:1;display:flex!important;flex-direction:column;justify-content:space-between!important;gap:14px!important}
+.shot{gap:18px!important;padding:10px;border-radius:12px;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.06)}
+.shot img{width:168px!important;height:104px!important;max-height:none!important;object-fit:cover;object-position:top}
+.shot b{font-size:23px!important;line-height:1.2!important}.shot i{font-size:18px!important}
+/* bars */
+.bars{display:flex;flex-direction:column;gap:6px}
+.bars .row{font-size:21px!important;margin-bottom:10px!important;gap:14px!important}
+.bars .row span{width:150px!important;color:#D6D6E2}
+.bars .row .tr{height:16px!important;border-radius:8px!important;background:rgba(255,255,255,.07)!important}
+.bars .row .tr i{background:linear-gradient(90deg,#3FC9A8,#6EE7CB)!important;border-radius:8px}
+.bars .row b{font-size:24px!important;width:52px!important;font-variant-numeric:tabular-nums}
+.log{font-size:16px!important;height:84px!important;color:#9FE9DB!important}
+/* kpis + findings */
+.kpis{gap:10px!important;margin-bottom:16px!important}
+.kpi{background:rgba(255,255,255,.05)!important;border:1px solid rgba(255,255,255,.07);border-radius:12px!important;padding:12px 6px!important}
+.kpi b{font-size:40px!important}.kpi span{font-size:15px!important;letter-spacing:.04em}
+.stack{gap:8px!important}
+.fc{padding:9px 14px!important;border-left-width:5px!important;background:rgba(255,255,255,.045)!important;border-radius:10px!important}
+.fc img{width:64px!important;height:40px!important}
+.fc .x{font-size:17px!important;line-height:1.3!important}
+.fc .x i{font-size:13px!important;margin-right:8px!important;color:#FF8C96!important;font-weight:700}
+.verdict{font-size:18px!important;padding:12px 16px!important}
+.decide{font-size:18px!important;padding:12px 16px!important;background:rgba(255,255,255,.045)!important}
+.btns span{font-size:17px!important;padding:8px 4px!important}
+.kfoot{font-size:15px!important}
+.cta{font-size:20px!important;padding:11px 20px!important;border-radius:10px!important;margin-top:14px!important}
+/* demo 2: sections + agents */
+.sec{font-size:19px!important;padding:8px 12px!important;margin-bottom:6px!important}
+.ag{padding:8px 12px!important;margin-bottom:6px!important;gap:12px!important;background:rgba(255,255,255,.04)!important}
+.ag .t b{font-size:18px!important}.ag .t i{font-size:14px!important}
+.ag .c{font-size:24px!important;min-width:36px!important}
+.ag .d{width:12px!important;height:12px!important}
+/* demo 3: chips + ledger */
+.chips{gap:8px!important}
+.chip{font-size:18px!important;padding:6px 12px!important}
+.ledger .r{font-size:17px!important;padding:9px 12px!important;margin-bottom:7px!important;background:rgba(255,255,255,.045)!important}
+.ledger .r em{font-size:12px!important;width:92px!important;padding:4px 6px!important}
+.bars{flex:1;justify-content:space-around;padding:4px 0}
+.bars .row{margin-bottom:0!important}
+.fc .x{font-size:18px!important}
+.ledger{flex:1;display:flex;flex-direction:column;justify-content:flex-start}
+.ledger .r{font-size:18px!important}
+.ag .t b{font-size:19px!important}.ag .t i{font-size:15px!important}
+.sec{font-size:20px!important}
 body,button{font-family:Inter,&quot;Hiragino Sans&quot;,&quot;Hiragino Kaku Gothic ProN&quot;,&quot;Yu Gothic UI&quot;,&quot;Yu Gothic&quot;,&quot;Meiryo&quot;,&quot;Noto Sans JP&quot;,sans-serif}
 &lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;div class=&quot;dgrid&quot;&gt;&lt;/div&gt;&lt;script&gt;
 const $=(sel,root)=&gt; (root||document).querySelector(sel);

@@ -2349,6 +2349,58 @@ body{display:flex;flex-direction:column;padding:0}
 .dgrid{margin-top:0!important;flex:1;min-height:0;height:100%}
 .dcol{border-top-color:#2A2A40!important}
 body{padding-bottom:34px}
+/* demo report polish */
+body{padding:0 0 26px!important}
+.dgrid{display:grid!important;grid-template-columns:1fr 1.12fr 1.08fr!important;gap:20px!important;align-items:stretch}
+.dcol{background:linear-gradient(180deg,#16161F 0%,#111118 100%)!important;border:1px solid rgba(255,255,255,.09)!important;border-radius:18px!important;padding:24px 28px 22px!important;box-shadow:0 18px 40px -24px rgba(0,0,0,.8)}
+.dcol&gt;h5{font-size:16px!important;letter-spacing:.18em!important;color:#C9A0FF!important;margin:0 0 18px!important;padding:0 0 14px;border-bottom:1px solid rgba(255,255,255,.08);font-weight:700!important}
+.doc{font-size:21px!important;line-height:1.45!important;color:#A9A9BA!important;margin-bottom:18px!important}
+.doc b{color:#fff;font-size:23px}
+/* demo 1: journey shots */
+.shots{flex:1;display:flex!important;flex-direction:column;justify-content:space-between!important;gap:14px!important}
+.shot{gap:18px!important;padding:10px;border-radius:12px;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.06)}
+.shot img{width:168px!important;height:104px!important;max-height:none!important;object-fit:cover;object-position:top}
+.shot b{font-size:23px!important;line-height:1.2!important}.shot i{font-size:18px!important}
+/* bars */
+.bars{display:flex;flex-direction:column;gap:6px}
+.bars .row{font-size:21px!important;margin-bottom:10px!important;gap:14px!important}
+.bars .row span{width:150px!important;color:#D6D6E2}
+.bars .row .tr{height:16px!important;border-radius:8px!important;background:rgba(255,255,255,.07)!important}
+.bars .row .tr i{background:linear-gradient(90deg,#3FC9A8,#6EE7CB)!important;border-radius:8px}
+.bars .row b{font-size:24px!important;width:52px!important;font-variant-numeric:tabular-nums}
+.log{font-size:16px!important;height:84px!important;color:#9FE9DB!important}
+/* kpis + findings */
+.kpis{gap:10px!important;margin-bottom:16px!important}
+.kpi{background:rgba(255,255,255,.05)!important;border:1px solid rgba(255,255,255,.07);border-radius:12px!important;padding:12px 6px!important}
+.kpi b{font-size:40px!important}.kpi span{font-size:15px!important;letter-spacing:.04em}
+.stack{gap:8px!important}
+.fc{padding:9px 14px!important;border-left-width:5px!important;background:rgba(255,255,255,.045)!important;border-radius:10px!important}
+.fc img{width:64px!important;height:40px!important}
+.fc .x{font-size:17px!important;line-height:1.3!important}
+.fc .x i{font-size:13px!important;margin-right:8px!important;color:#FF8C96!important;font-weight:700}
+.verdict{font-size:18px!important;padding:12px 16px!important}
+.decide{font-size:18px!important;padding:12px 16px!important;background:rgba(255,255,255,.045)!important}
+.btns span{font-size:17px!important;padding:8px 4px!important}
+.kfoot{font-size:15px!important}
+.cta{font-size:20px!important;padding:11px 20px!important;border-radius:10px!important;margin-top:14px!important}
+/* demo 2: sections + agents */
+.sec{font-size:19px!important;padding:8px 12px!important;margin-bottom:6px!important}
+.ag{padding:8px 12px!important;margin-bottom:6px!important;gap:12px!important;background:rgba(255,255,255,.04)!important}
+.ag .t b{font-size:18px!important}.ag .t i{font-size:14px!important}
+.ag .c{font-size:24px!important;min-width:36px!important}
+.ag .d{width:12px!important;height:12px!important}
+/* demo 3: chips + ledger */
+.chips{gap:8px!important}
+.chip{font-size:18px!important;padding:6px 12px!important}
+.ledger .r{font-size:17px!important;padding:9px 12px!important;margin-bottom:7px!important;background:rgba(255,255,255,.045)!important}
+.ledger .r em{font-size:12px!important;width:92px!important;padding:4px 6px!important}
+.bars{flex:1;justify-content:space-around;padding:4px 0}
+.bars .row{margin-bottom:0!important}
+.fc .x{font-size:18px!important}
+.ledger{flex:1;display:flex;flex-direction:column;justify-content:flex-start}
+.ledger .r{font-size:18px!important}
+.ag .t b{font-size:19px!important}.ag .t i{font-size:15px!important}
+.sec{font-size:20px!important}
 &lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;div class=&quot;dgrid&quot;&gt;&lt;/div&gt;&lt;script&gt;const TH={&quot;hero&quot;: &quot;talk-img-cad661daad.jpg&quot;, &quot;cards&quot;: &quot;talk-img-96cea09db8.jpg&quot;, &quot;cta&quot;: &quot;talk-img-e465736827.jpg&quot;};
 const $=(sel,root)=&gt; (root||document).querySelector(sel);
 const esc=s=&gt;String(s).replace(/[&amp;&lt;&gt;]/g,c=&gt;({&#x27;&amp;&#x27;:&#x27;&amp;amp;&#x27;,&#x27;&lt;&#x27;:&#x27;&amp;lt;&#x27;,&#x27;&gt;&#x27;:&#x27;&amp;gt;&#x27;}[c]));
@@ -2792,6 +2844,58 @@ body{display:flex;flex-direction:column;padding:0}
 .dgrid{margin-top:0!important;flex:1;min-height:0;height:100%}
 .dcol{border-top-color:#2A2A40!important}
 body{padding-bottom:34px}
+/* demo report polish */
+body{padding:0 0 26px!important}
+.dgrid{display:grid!important;grid-template-columns:1fr 1.12fr 1.08fr!important;gap:20px!important;align-items:stretch}
+.dcol{background:linear-gradient(180deg,#16161F 0%,#111118 100%)!important;border:1px solid rgba(255,255,255,.09)!important;border-radius:18px!important;padding:24px 28px 22px!important;box-shadow:0 18px 40px -24px rgba(0,0,0,.8)}
+.dcol&gt;h5{font-size:16px!important;letter-spacing:.18em!important;color:#C9A0FF!important;margin:0 0 18px!important;padding:0 0 14px;border-bottom:1px solid rgba(255,255,255,.08);font-weight:700!important}
+.doc{font-size:21px!important;line-height:1.45!important;color:#A9A9BA!important;margin-bottom:18px!important}
+.doc b{color:#fff;font-size:23px}
+/* demo 1: journey shots */
+.shots{flex:1;display:flex!important;flex-direction:column;justify-content:space-between!important;gap:14px!important}
+.shot{gap:18px!important;padding:10px;border-radius:12px;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.06)}
+.shot img{width:168px!important;height:104px!important;max-height:none!important;object-fit:cover;object-position:top}
+.shot b{font-size:23px!important;line-height:1.2!important}.shot i{font-size:18px!important}
+/* bars */
+.bars{display:flex;flex-direction:column;gap:6px}
+.bars .row{font-size:21px!important;margin-bottom:10px!important;gap:14px!important}
+.bars .row span{width:150px!important;color:#D6D6E2}
+.bars .row .tr{height:16px!important;border-radius:8px!important;background:rgba(255,255,255,.07)!important}
+.bars .row .tr i{background:linear-gradient(90deg,#3FC9A8,#6EE7CB)!important;border-radius:8px}
+.bars .row b{font-size:24px!important;width:52px!important;font-variant-numeric:tabular-nums}
+.log{font-size:16px!important;height:84px!important;color:#9FE9DB!important}
+/* kpis + findings */
+.kpis{gap:10px!important;margin-bottom:16px!important}
+.kpi{background:rgba(255,255,255,.05)!important;border:1px solid rgba(255,255,255,.07);border-radius:12px!important;padding:12px 6px!important}
+.kpi b{font-size:40px!important}.kpi span{font-size:15px!important;letter-spacing:.04em}
+.stack{gap:8px!important}
+.fc{padding:9px 14px!important;border-left-width:5px!important;background:rgba(255,255,255,.045)!important;border-radius:10px!important}
+.fc img{width:64px!important;height:40px!important}
+.fc .x{font-size:17px!important;line-height:1.3!important}
+.fc .x i{font-size:13px!important;margin-right:8px!important;color:#FF8C96!important;font-weight:700}
+.verdict{font-size:18px!important;padding:12px 16px!important}
+.decide{font-size:18px!important;padding:12px 16px!important;background:rgba(255,255,255,.045)!important}
+.btns span{font-size:17px!important;padding:8px 4px!important}
+.kfoot{font-size:15px!important}
+.cta{font-size:20px!important;padding:11px 20px!important;border-radius:10px!important;margin-top:14px!important}
+/* demo 2: sections + agents */
+.sec{font-size:19px!important;padding:8px 12px!important;margin-bottom:6px!important}
+.ag{padding:8px 12px!important;margin-bottom:6px!important;gap:12px!important;background:rgba(255,255,255,.04)!important}
+.ag .t b{font-size:18px!important}.ag .t i{font-size:14px!important}
+.ag .c{font-size:24px!important;min-width:36px!important}
+.ag .d{width:12px!important;height:12px!important}
+/* demo 3: chips + ledger */
+.chips{gap:8px!important}
+.chip{font-size:18px!important;padding:6px 12px!important}
+.ledger .r{font-size:17px!important;padding:9px 12px!important;margin-bottom:7px!important;background:rgba(255,255,255,.045)!important}
+.ledger .r em{font-size:12px!important;width:92px!important;padding:4px 6px!important}
+.bars{flex:1;justify-content:space-around;padding:4px 0}
+.bars .row{margin-bottom:0!important}
+.fc .x{font-size:18px!important}
+.ledger{flex:1;display:flex;flex-direction:column;justify-content:flex-start}
+.ledger .r{font-size:18px!important}
+.ag .t b{font-size:19px!important}.ag .t i{font-size:15px!important}
+.sec{font-size:20px!important}
 &lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;div class=&quot;dgrid&quot;&gt;&lt;/div&gt;&lt;script&gt;const BD={&quot;agents&quot;: [{&quot;name&quot;: &quot;qe-requirements-validator&quot;, &quot;n&quot;: 9, &quot;label&quot;: &quot;Verifiability of outcomes (is there an observable measure?);&quot;}, {&quot;name&quot;: &quot;qe-quality-criteria-recommender&quot;, &quot;n&quot;: 7, &quot;label&quot;: &quot;HTSM v6.3 quality dimensions: which dimensions matter for this feature (functionality, reliability, usability, charisma, security, performance, scalability, s…&quot;}, {&quot;name&quot;: &quot;qe-dependency-mapper&quot;, &quot;n&quot;: 6, &quot;label&quot;: &quot;Hidden dependencies, cascade risk, timing coupling.&quot;}, {&quot;name&quot;: &quot;qe-risk-assessor&quot;, &quot;n&quot;: 6, &quot;label&quot;: &quot;Under-treated risks;&quot;}, {&quot;name&quot;: &quot;qe-devils-advocate&quot;, &quot;n&quot;: 5, &quot;label&quot;: &quot;Challenge baked-in assumptions.&quot;}, {&quot;name&quot;: &quot;qe-product-factors-assessor&quot;, &quot;n&quot;: 5, &quot;label&quot;: &quot;SFDIPOT 7-factor coverage analysis: Structure, Function, Data, Interface, Platform, Operations, Time.&quot;}, {&quot;name&quot;: &quot;qe-security-auditor&quot;, &quot;n&quot;: 4, &quot;label&quot;: &quot;Security posture and compliance scope: PCI / GDPR / CCPA / regulatory implications, authentication and authorization model, audit-trail requirements, IDOR ris…&quot;}, {&quot;name&quot;: &quot;qe-qx-partner&quot;, &quot;n&quot;: 3, &quot;label&quot;: &quot;23 user-experience heuristics (H1.1–H7.4), Oracle problems (user vs business conflicts, unclear quality criteria), Rule-of-Three failure modes, visible/invisib…&quot;}], &quot;findings&quot;: [{&quot;id&quot;: &quot;F-001&quot;, &quot;sev&quot;: &quot;HIGH&quot;, &quot;section&quot;: &quot;Dependencies &amp; Risks&quot;, &quot;title&quot;: &quot;SHOP-2884 (offline contract import system) explicitly required as dependency but absent from Dependencies section&quot;, &quot;agents&quot;: [&quot;qe-dependency-mapper&quot;]}, {&quot;id&quot;: &quot;F-002&quot;, &quot;sev&quot;: &quot;HIGH&quot;, &quot;section&quot;: &quot;Business Rules&quot;, &quot;title&quot;: &quot;BR-CURR-01 derives transaction currency from &#x27;customer ID&#x27; without binding it to the authenticated session: IDOR attack surface at specification level&quot;, &quot;agents&quot;: [&quot;qe-dependency-mapper&quot;, &quot;qe-devils-advocate&quot;, &quot;qe-product-factors-assessor&quot;, &quot;qe-qx-partner&quot;, &quot;qe-security-auditor&quot;]}, {&quot;id&quot;: &quot;F-003&quot;, &quot;sev&quot;: &quot;HIGH&quot;, &quot;section&quot;: &quot;Process Model&quot;, &quot;title&quot;: &quot;Country-currency permission table timing gate: owner undeclared and no corresponding dependency entry, blocking Technical Discovery&quot;, &quot;agents&quot;: [&quot;qe-dependency-mapper&quot;, &quot;qe-product-factors-assessor&quot;, &quot;qe-quality-criteria-recommender&quot;, &quot;qe-requirements-validator&quot;, &quot;qe-risk-assessor&quot;, &quot;qe-security-auditor&quot;]}, {&quot;id&quot;: &quot;F-004&quot;, &quot;sev&quot;: &quot;HIGH&quot;, &quot;section&quot;: &quot;Executive Summary&quot;, &quot;title&quot;: &quot;T1 KPI has no NFR for measurement infrastructure in business requirements&quot;, &quot;agents&quot;: [&quot;qe-dependency-mapper&quot;, &quot;qe-devils-advocate&quot;, &quot;qe-product-factors-assessor&quot;, &quot;qe-quality-criteria-recommender&quot;, &quot;qe-requirements-validator&quot;, &quot;qe-risk-assessor&quot;]}, {&quot;id&quot;: &quot;F-005&quot;, &quot;sev&quot;: &quot;HIGH&quot;, &quot;section&quot;: &quot;Dependencies &amp; Risks&quot;, &quot;title&quot;: &quot;BR2.6 is referenced in BR3.3 but is not defined anywhere in the document&quot;, &quot;agents&quot;: [&quot;qe-dependency-mapper&quot;, &quot;qe-product-factors-assessor&quot;, &quot;qe-quality-criteria-recommender&quot;, &quot;qe-requirements-validator&quot;, &quot;qe-risk-assessor&quot;]}, {&quot;id&quot;: &quot;F-006&quot;, &quot;sev&quot;: &quot;HIGH&quot;, &quot;section&quot;: &quot;Business Rules&quot;, &quot;title&quot;: &quot;Missing price book unhappy path acknowledged but unresolved: blocks $32M Germany path&quot;, &quot;agents&quot;: [&quot;qe-quality-criteria-recommender&quot;]}, {&quot;id&quot;: &quot;F-007&quot;, &quot;sev&quot;: &quot;HIGH&quot;, &quot;section&quot;: &quot;Process Model&quot;, &quot;title&quot;: &quot;SHOP-2884 offline import scope decision required by BR2.1 is absent: currency validation gap unresolved&quot;, &quot;agents&quot;: [&quot;qe-requirements-validator&quot;]}, {&quot;id&quot;: &quot;F-008&quot;, &quot;sev&quot;: &quot;HIGH&quot;, &quot;section&quot;: &quot;Problem &amp; Outcomes&quot;, &quot;title&quot;: &quot;Audit records containing EU customer PII have no GDPR retention period or data residency requirement&quot;, &quot;agents&quot;: [&quot;qe-qx-partner&quot;, &quot;qe-requirements-validator&quot;, &quot;qe-security-auditor&quot;]}, {&quot;id&quot;: &quot;F-009&quot;, &quot;sev&quot;: &quot;HIGH&quot;, &quot;section&quot;: &quot;Business Requirements&quot;, &quot;title&quot;: &quot;Two-person approval audit trail covers only expired changes: successful approvals are unlogged&quot;, &quot;agents&quot;: [&quot;qe-security-auditor&quot;]}, {&quot;id&quot;: &quot;F-010&quot;, &quot;sev&quot;: &quot;MEDIUM&quot;, &quot;section&quot;: &quot;Problem &amp; Outcomes&quot;, &quot;title&quot;: &quot;finance 2nd-currency data source: basis for KPI target and GMV market sizing: not declared as dependency&quot;, &quot;agents&quot;: [&quot;qe-dependency-mapper&quot;]}, {&quot;id&quot;: &quot;F-011&quot;, &quot;sev&quot;: &quot;MEDIUM&quot;, &quot;section&quot;: &quot;Problem &amp; Outcomes&quot;, &quot;title&quot;: &quot;GMV capture target assumes offline enterprise customers will self-migrate digitally at &gt;80% rate without behavioral evidence&quot;, &quot;agents&quot;: [&quot;qe-devils-advocate&quot;, &quot;qe-quality-criteria-recommender&quot;]}, {&quot;id&quot;: &quot;F-012&quot;, &quot;sev&quot;: &quot;MEDIUM&quot;, &quot;section&quot;: &quot;Dependencies &amp; Risks&quot;, &quot;title&quot;: &quot;Risks section is empty despite multiple explicitly identified risks present in the document content&quot;, &quot;agents&quot;: [&quot;qe-devils-advocate&quot;]}, {&quot;id&quot;: &quot;F-013&quot;, &quot;sev&quot;: &quot;MEDIUM&quot;, &quot;section&quot;: &quot;Business Requirements&quot;, &quot;title&quot;: &quot;Expand restricted to renewal date but no user-facing communication requirement when attempted outside the renewal window&quot;, &quot;agents&quot;: [&quot;qe-product-factors-assessor&quot;, &quot;qe-qx-partner&quot;]}, {&quot;id&quot;: &quot;F-014&quot;, &quot;sev&quot;: &quot;MEDIUM&quot;, &quot;section&quot;: &quot;Business Requirements&quot;, &quot;title&quot;: &quot;Immutable audit log has no retention period or durability NFR&quot;, &quot;agents&quot;: [&quot;qe-quality-criteria-recommender&quot;]}, {&quot;id&quot;: &quot;F-015&quot;, &quot;sev&quot;: &quot;MEDIUM&quot;, &quot;section&quot;: &quot;Business Requirements&quot;, &quot;title&quot;: &quot;No idempotency requirement for Renew/Expand financial transactions&quot;, &quot;agents&quot;: [&quot;qe-quality-criteria-recommender&quot;]}, {&quot;id&quot;: &quot;F-016&quot;, &quot;sev&quot;: &quot;MEDIUM&quot;, &quot;section&quot;: &quot;Business Requirements&quot;, &quot;title&quot;: &quot;C-018 contradicts CRAWL scope: \&quot;will not support renew or expand\&quot; conflicts with BR1.1 and C-016&quot;, &quot;agents&quot;: [&quot;qe-requirements-validator&quot;]}, {&quot;id&quot;: &quot;F-017&quot;, &quot;sev&quot;: &quot;MEDIUM&quot;, &quot;section&quot;: &quot;Problem &amp; Outcomes&quot;, &quot;title&quot;: &quot;No reasoning provided for why multi-currency enablement drives Average Order Value rather than Conversion Rate&quot;, &quot;agents&quot;: [&quot;qe-requirements-validator&quot;]}, {&quot;id&quot;: &quot;F-018&quot;, &quot;sev&quot;: &quot;MEDIUM&quot;, &quot;section&quot;: &quot;Business Requirements&quot;, &quot;title&quot;: &quot;CRAWL names no specific architectural extension point enabling WALK Land-flow without a rebuild&quot;, &quot;agents&quot;: [&quot;qe-requirements-validator&quot;]}, {&quot;id&quot;: &quot;F-019&quot;, &quot;sev&quot;: &quot;MEDIUM&quot;, &quot;section&quot;: &quot;Business Requirements&quot;, &quot;title&quot;: &quot;Feature specifies CRAWL stage but provides no North Star description of WALK or RUN capability&quot;, &quot;agents&quot;: [&quot;qe-requirements-validator&quot;]}, {&quot;id&quot;: &quot;F-020&quot;, &quot;sev&quot;: &quot;MEDIUM&quot;, &quot;section&quot;: &quot;Phasing&quot;, &quot;title&quot;: &quot;US Operator Model incompatibility with Customer-SoR-Currency is acknowledged in the dossier but absent from the Risks section&quot;, &quot;agents&quot;: [&quot;qe-risk-assessor&quot;]}, {&quot;id&quot;: &quot;F-021&quot;, &quot;sev&quot;: &quot;MEDIUM&quot;, &quot;section&quot;: &quot;Business Rules&quot;, &quot;title&quot;: &quot;Price book path for non-software hosted businesses is explicitly undefined: segment of GMV target has no digital self-service path&quot;, &quot;agents&quot;: [&quot;qe-risk-assessor&quot;]}, {&quot;id&quot;: &quot;F-022&quot;, &quot;sev&quot;: &quot;MEDIUM&quot;, &quot;section&quot;: &quot;Problem &amp; Outcomes&quot;, &quot;title&quot;: &quot;Currency Rejection Rate target has no production monitoring requirement: CURRENCY_NOT_PERMITTED events are invisible after launch&quot;, &quot;agents&quot;: [&quot;qe-risk-assessor&quot;]}, {&quot;id&quot;: &quot;F-023&quot;, &quot;sev&quot;: &quot;LOW&quot;, &quot;section&quot;: &quot;Problem &amp; Outcomes&quot;, &quot;title&quot;: &quot;Turkey grouped with EU/Japan CRAWL markets without validating USD-denominated B2B digital transaction feasibility under TCMB/BDDK regulation&quot;, &quot;agents&quot;: [&quot;qe-devils-advocate&quot;]}]};
 const $=(sel,root)=&gt; (root||document).querySelector(sel);
 const esc=s=&gt;String(s).replace(/[&amp;&lt;&gt;]/g,c=&gt;({&#x27;&amp;&#x27;:&#x27;&amp;amp;&#x27;,&#x27;&lt;&#x27;:&#x27;&amp;lt;&#x27;,&#x27;&gt;&#x27;:&#x27;&amp;gt;&#x27;}[c]));
@@ -2805,7 +2909,7 @@ async function demoBD(root,t){
   const w=mkWait(t);
   const secs=[&#x27;Executive Summary&#x27;,&#x27;Problem &amp; Outcomes&#x27;,&#x27;Business Requirements&#x27;,&#x27;Business Rules&#x27;,&#x27;Process Model&#x27;,&#x27;Dependencies &amp; Risks&#x27;,&#x27;Phasing&#x27;];
   root.innerHTML=`
-  &lt;div class=&quot;dcol&quot;&gt;&lt;h5&gt;WHAT THE TEAM BRINGS&lt;/h5&gt;&lt;div class=&quot;doc&quot;&gt;&lt;b&gt;Business discovery document&lt;/b&gt;&lt;br&gt;SHOP-4107 · Renew and Expand&lt;br&gt;Fictional retailer&lt;/div&gt;&lt;div id=&quot;secs&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;dcol&quot;&gt;&lt;h5&gt;WHAT THE TEAM BRINGS&lt;/h5&gt;&lt;div class=&quot;doc&quot;&gt;&lt;b&gt;Business discovery document&lt;/b&gt;&lt;br&gt;SHOP-4107 · Ecommerce platform&lt;br&gt;Fictional retailer&lt;/div&gt;&lt;div id=&quot;secs&quot;&gt;&lt;/div&gt;&lt;/div&gt;
   &lt;div class=&quot;dcol&quot;&gt;&lt;h5&gt;EIGHT AI AGENTS REVIEW IT&lt;/h5&gt;&lt;div id=&quot;ags&quot;&gt;&lt;/div&gt;&lt;div class=&quot;log&quot; id=&quot;log&quot;&gt;&lt;/div&gt;&lt;/div&gt;
   &lt;div class=&quot;dcol&quot;&gt;&lt;h5&gt;WHAT COMES BACK&lt;/h5&gt;
     &lt;div class=&quot;kpis&quot;&gt;&lt;div class=&quot;kpi&quot;&gt;&lt;b id=&quot;k0&quot;&gt;0&lt;/b&gt;&lt;span&gt;findings&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;kpi hi&quot;&gt;&lt;b id=&quot;k1&quot;&gt;0&lt;/b&gt;&lt;span&gt;high&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;kpi med&quot;&gt;&lt;b id=&quot;k2&quot;&gt;0&lt;/b&gt;&lt;span&gt;medium&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;kpi low&quot;&gt;&lt;b id=&quot;k3&quot;&gt;0&lt;/b&gt;&lt;span&gt;low&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
@@ -3244,6 +3348,58 @@ body{display:flex;flex-direction:column;padding:0}
 .dgrid{margin-top:0!important;flex:1;min-height:0;height:100%}
 .dcol{border-top-color:#2A2A40!important}
 body{padding-bottom:34px}
+/* demo report polish */
+body{padding:0 0 26px!important}
+.dgrid{display:grid!important;grid-template-columns:1fr 1.12fr 1.08fr!important;gap:20px!important;align-items:stretch}
+.dcol{background:linear-gradient(180deg,#16161F 0%,#111118 100%)!important;border:1px solid rgba(255,255,255,.09)!important;border-radius:18px!important;padding:24px 28px 22px!important;box-shadow:0 18px 40px -24px rgba(0,0,0,.8)}
+.dcol&gt;h5{font-size:16px!important;letter-spacing:.18em!important;color:#C9A0FF!important;margin:0 0 18px!important;padding:0 0 14px;border-bottom:1px solid rgba(255,255,255,.08);font-weight:700!important}
+.doc{font-size:21px!important;line-height:1.45!important;color:#A9A9BA!important;margin-bottom:18px!important}
+.doc b{color:#fff;font-size:23px}
+/* demo 1: journey shots */
+.shots{flex:1;display:flex!important;flex-direction:column;justify-content:space-between!important;gap:14px!important}
+.shot{gap:18px!important;padding:10px;border-radius:12px;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.06)}
+.shot img{width:168px!important;height:104px!important;max-height:none!important;object-fit:cover;object-position:top}
+.shot b{font-size:23px!important;line-height:1.2!important}.shot i{font-size:18px!important}
+/* bars */
+.bars{display:flex;flex-direction:column;gap:6px}
+.bars .row{font-size:21px!important;margin-bottom:10px!important;gap:14px!important}
+.bars .row span{width:150px!important;color:#D6D6E2}
+.bars .row .tr{height:16px!important;border-radius:8px!important;background:rgba(255,255,255,.07)!important}
+.bars .row .tr i{background:linear-gradient(90deg,#3FC9A8,#6EE7CB)!important;border-radius:8px}
+.bars .row b{font-size:24px!important;width:52px!important;font-variant-numeric:tabular-nums}
+.log{font-size:16px!important;height:84px!important;color:#9FE9DB!important}
+/* kpis + findings */
+.kpis{gap:10px!important;margin-bottom:16px!important}
+.kpi{background:rgba(255,255,255,.05)!important;border:1px solid rgba(255,255,255,.07);border-radius:12px!important;padding:12px 6px!important}
+.kpi b{font-size:40px!important}.kpi span{font-size:15px!important;letter-spacing:.04em}
+.stack{gap:8px!important}
+.fc{padding:9px 14px!important;border-left-width:5px!important;background:rgba(255,255,255,.045)!important;border-radius:10px!important}
+.fc img{width:64px!important;height:40px!important}
+.fc .x{font-size:17px!important;line-height:1.3!important}
+.fc .x i{font-size:13px!important;margin-right:8px!important;color:#FF8C96!important;font-weight:700}
+.verdict{font-size:18px!important;padding:12px 16px!important}
+.decide{font-size:18px!important;padding:12px 16px!important;background:rgba(255,255,255,.045)!important}
+.btns span{font-size:17px!important;padding:8px 4px!important}
+.kfoot{font-size:15px!important}
+.cta{font-size:20px!important;padding:11px 20px!important;border-radius:10px!important;margin-top:14px!important}
+/* demo 2: sections + agents */
+.sec{font-size:19px!important;padding:8px 12px!important;margin-bottom:6px!important}
+.ag{padding:8px 12px!important;margin-bottom:6px!important;gap:12px!important;background:rgba(255,255,255,.04)!important}
+.ag .t b{font-size:18px!important}.ag .t i{font-size:14px!important}
+.ag .c{font-size:24px!important;min-width:36px!important}
+.ag .d{width:12px!important;height:12px!important}
+/* demo 3: chips + ledger */
+.chips{gap:8px!important}
+.chip{font-size:18px!important;padding:6px 12px!important}
+.ledger .r{font-size:17px!important;padding:9px 12px!important;margin-bottom:7px!important;background:rgba(255,255,255,.045)!important}
+.ledger .r em{font-size:12px!important;width:92px!important;padding:4px 6px!important}
+.bars{flex:1;justify-content:space-around;padding:4px 0}
+.bars .row{margin-bottom:0!important}
+.fc .x{font-size:18px!important}
+.ledger{flex:1;display:flex;flex-direction:column;justify-content:flex-start}
+.ledger .r{font-size:18px!important}
+.ag .t b{font-size:19px!important}.ag .t i{font-size:15px!important}
+.sec{font-size:20px!important}
 &lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;div class=&quot;dgrid&quot;&gt;&lt;/div&gt;&lt;script&gt;
 const $=(sel,root)=&gt; (root||document).querySelector(sel);
 const esc=s=&gt;String(s).replace(/[&amp;&lt;&gt;]/g,c=&gt;({&#x27;&amp;&#x27;:&#x27;&amp;amp;&#x27;,&#x27;&lt;&#x27;:&#x27;&amp;lt;&#x27;,&#x27;&gt;&#x27;:&#x27;&amp;gt;&#x27;}[c]));
