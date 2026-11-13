@@ -1659,6 +1659,31 @@ body.present:has(#tk.cur) main,body.present:has(#tk.cur) .panel{background:trans
 .tkf b{font-size:26px;white-space:nowrap}
 .tkt b{font-size:40px;white-space:nowrap}
 .tka svg{width:96px}
+/* intro: about me */
+.biog{display:grid;grid-template-columns:330px 1fr;gap:40px;margin-top:6px}
+.biol{display:flex;flex-direction:column}
+.biop{border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,.14);box-shadow:0 24px 60px -24px rgba(0,0,0,.75);height:400px}
+.biop img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;display:block}
+.bion{font-size:30px;font-weight:800;letter-spacing:-.02em;color:#fff;margin-top:16px;line-height:1.1}
+.bior{font-size:15px;line-height:1.5;color:var(--text-2);margin-top:6px}
+.biom{margin-top:14px;display:inline-flex;align-items:center;gap:12px;align-self:flex-start;padding:9px 18px;border-radius:999px;background:rgba(161,0,255,.12);border:1px solid rgba(201,124,255,.45)}
+.biom span{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--text-3)}
+.biom b{font-size:19px;color:var(--purple-l)}
+.bioR{display:flex;flex-direction:column;gap:22px}
+.bioq{margin:0;font-size:25px;line-height:1.38;color:var(--text-1,#E6E6EE);border-left:4px solid var(--purple);padding-left:22px;font-style:italic}
+.bioq span{color:var(--text-2)}.bioq b{font-style:normal;color:var(--text-1,#E6E6EE)}.bioq em{font-style:normal;font-weight:800;color:#fff}.bioq i{color:var(--purple-l)}
+.biob{display:grid;grid-template-columns:1fr 1fr;gap:14px 30px}
+.bioi{display:flex;gap:11px;align-items:flex-start;font-size:17px;line-height:1.4;color:var(--text-2)}
+.bioi>span{flex:none;width:8px;height:8px;border-radius:50%;margin-top:8px}
+.bioi b{color:#fff}
+.bioa{display:grid;grid-template-columns:1fr 1fr;gap:18px;padding-top:18px;border-top:1px solid rgba(255,255,255,.1)}
+.bioaw{display:flex;align-items:center;gap:16px;background:var(--bg-1);border:1px solid var(--border);border-left:4px solid var(--ac);border-radius:11px;padding:16px 18px}
+.bioaw img{flex:none;width:92px;height:92px;display:block}
+.bioaw img.pt{width:66px;height:94px;object-fit:cover;border-radius:6px}
+.bioaw span{display:block;font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ac);margin-bottom:4px}
+.bioaw b{display:block;font-size:22px;font-weight:800;color:#fff;line-height:1.1}
+.bioaw i{display:block;font-style:normal;font-size:13.5px;color:var(--text-3);margin-top:5px}
+.biom span{white-space:nowrap}
 body,button,input{font-family:Inter,"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic","Meiryo","Noto Sans JP",sans-serif}
 </style>
 </head>
@@ -1693,6 +1718,27 @@ body,button,input{font-family:Inter,"Hiragino Sans","Hiragino Kaku Gothic ProN",
     <div class="ttlwhen">2026年11月13日 · 15:25〜15:55<br>大崎ブライトコアホール、東京</div>
   </div>
 </div></div><div class="fbcred">写真: Takashi Miyazaki / Unsplash</div></section>
+<section class="chap" id="bio" data-notes="">
+  <div class="sh"><h2 class="st">自己紹介</h2><span class="sn">はじめに</span></div>
+  
+
+  <div class="biog">
+    <div class="biol">
+      <div class="biop"><img src="talk-img-8222e3214b.jpg" alt="Lalitkumar Bhamare"></div>
+      <div class="bion">Lalitkumar Bhamare</div>
+      <div class="bior">シニアマネージャー、Accenture Song · ドイツ<br>Accenture QES ソートリーダーシップ EMEA リード</div>
+      <div class="biom"><span>ほかの仕事はこちら</span><b>talesoftesting.com</b></div>
+    </div>
+    <div class="bioR">
+      <p class="bioq"><span>多くの組織は、品質を <b>プロセス</b></span> で追い求めます。私はキャリアを通じて、品質が <em>意識</em>から生まれることを示してきました。ソフトウェアデリバリーのあらゆる段階に <i>織り込まれた</i> 、意図的で人間中心の気づきです。</p>
+      <div class="biob"><div class="bioi"><span style="background:var(--teal-l)"></span><div>CEO、編集長、共同創業者: <b>Tea-time with Testers</b></div></div><div class="bioi"><span style="background:var(--teal-l)"></span><div>元 教育担当副会長・理事: <b>Association for Software Testing, USA</b></div></div><div class="bioi"><span style="background:var(--amber-l)"></span><div>共著者: <b>State of Testing レポート</b></div></div><div class="bioi"><span style="background:var(--amber-l)"></span><div>寄稿者: <b>Taking Testing Seriously（Bach、Bolton 著）</b></div></div><div class="bioi"><span style="background:var(--purple-l)"></span><div>考案者: <b>QCSD と Agentic QCSD</b></div></div><div class="bioi"><span style="background:var(--purple-l)"></span><div>考案者: <b>QX（Quality Experience）フレームワーク</b></div></div><div class="bioi"><span style="background:var(--blue-l)"></span><div>国際的な基調講演者: <b>テストと品質のコーチ</b></div></div><div class="bioi"><span style="background:var(--blue-l)"></span><div>アドバイザリーボードメンバー: <b>ドイツのテック系スタートアップ</b></div></div></div>
+      <div class="bioa">
+        <div class="bioaw" style="--ac:var(--purple-l)"><img src="talk-img-be59c8c21d.png" alt="EuroSTAR 2022 Best Paper Winner"><div><span>EuroSTAR 2022</span><b>最優秀論文賞</b><i>Quality Conscious Software Delivery に対して</i></div></div>
+        <div class="bioaw" style="--ac:var(--amber-l)"><img class="pt" src="talk-img-8b2b445ef2.jpg" alt="PractiTest 2025 Emerging QA Leader of the Year"><div><span>PractiTest 2025</span><b>Emerging QA Leader of the Year 受賞</b></div></div>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="chap fb divider" id="d1" data-notes=""><div class="fbimg" style="background-image:url(talk-img-d4971a9f27.jpg);background-position:50% 50%"></div><div class="fbshade"></div><div class="fbin"><div class="dv"><span class="dvn">01</span><span class="dvk">セクション 01</span><h2 class="dvh">速い馬症候群</h2><p class="dvd">ツールが世代を重ねるごとにテストは速くなりました。それでも、ソフトウェア品質の低さによるコストは上がり続けました。</p></div></div><div class="fbcred">写真: Angelica Hasbon / Unsplash</div></section>
 <section class="chap fb horse" id="fh" data-notes=""><div class="fbimg" style="background-image:url(talk-img-73625bf513.jpg);background-position:50% 30%"></div><div class="fbshade"></div><div class="fbin"><div class="hz"><div class="hzt"><span class="dvk">速い馬症候群</span><h2 class="dvh">同じ騎手、同じ道、<br>速くなったのは馬だけ</h2><p class="dvd">どの世代のツールも、テストの速さを変えました。<br>何のためにテストするのか、その背後にあるマインドセットは、どれも変えませんでした。</p></div><div class="hzg"><div class="hzcol frag" style="--hc:var(--red);--hcl:var(--red-l);--dl:0.5s"><span class="hzk">01 · 品質なきスピードのコスト</span><div class="hzbig">$2.41T</div><p class="hzbl">2022年に米国でソフトウェア品質の低さによって失われた額。技術的負債 $1.52T は含まず</p><div class="hzx"><b>$5.4B</b><span>2024年7月、1つの欠陥のあるソフトウェア更新による Fortune 500 企業の推定損失</span></div><span class="hzsrc">CISQ 2022 · Parametrix 2024</span></div><div class="hzcol frag" style="--hc:var(--amber);--hcl:var(--amber-l);--dl:0.95s"><span class="hzk">02 · AI が加速させているもの</span><div class="hzbig">−7.2%</div><p class="hzbl">AI を導入したチームでのデリバリーの安定性</p><div class="hzx"><b>8×</b><span>2024年に重複コードブロックが増加、リファクタリングは 40% 減少</span></div><span class="hzsrc">DORA 2024 · GitClear 2025</span></div><div class="hzcol frag" style="--hc:var(--purple);--hcl:var(--purple-l);--dl:1.4s"><span class="hzk">03 · テストは AI を何に使っているか</span><div class="hzbig">70%</div><p class="hzbl">テストにおける AI 活用のうち、テストケース作成に使われる割合</p><div class="hzx"><b>4.5%</b><span>ビジネス価値で評価されているチームの割合。56% はカバレッジで評価されています。</span></div><span class="hzsrc">State of Testing 2026</span></div></div><p class="hzfoot frag">私たちはスピードを買い続け、その代償を品質で払い続けています。</p></div></div><div class="fbcred">写真: Catrin Ellis / Unsplash</div></section>
 </div>
@@ -3445,7 +3491,7 @@ document.addEventListener(&#x27;keydown&#x27;,e=&gt;{e.preventDefault();parent.p
   <div class="grid3" style="margin-top:14px">
     <div class="card"><span class="q">前提条件</span><p>Node 22.13 以上、npm 10 以上。</p></div>
     <div class="card"><span class="q">手動セットアップ</span><p>ホームフォルダの近くにクローンしてください。階層が深いと、グラフからファイルが抜け落ちます。</p></div>
-    <div class="card"><span class="q">Claude Code 以外をお使いの方</span><p>次を追加: <code>--with-copilot</code>, <code>--with-cursor</code> または <code>--with-kiro</code>.</p></div>
+    <div class="card"><span class="q">Claude Code 以外をお使いの方</span><p>次を追加: <code>--with-copilot</code>, <code>--with-cursor</code> または <code>--with-kiro</code></p></div>
   </div>
   <p class="src" style="margin-top:12px">詳しい手順: チュートリアルのリポジトリにある docs/DEVCONTAINER.md と README.md。</p>
   <button class="btn ghost nextc" data-next="w4">次へ: 演習 0 ↓</button>

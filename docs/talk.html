@@ -1659,6 +1659,31 @@ body.present:has(#tk.cur) main,body.present:has(#tk.cur) .panel{background:trans
 .tkf b{font-size:26px;white-space:nowrap}
 .tkt b{font-size:40px;white-space:nowrap}
 .tka svg{width:96px}
+/* intro: about me */
+.biog{display:grid;grid-template-columns:330px 1fr;gap:40px;margin-top:6px}
+.biol{display:flex;flex-direction:column}
+.biop{border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,.14);box-shadow:0 24px 60px -24px rgba(0,0,0,.75);height:400px}
+.biop img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;display:block}
+.bion{font-size:30px;font-weight:800;letter-spacing:-.02em;color:#fff;margin-top:16px;line-height:1.1}
+.bior{font-size:15px;line-height:1.5;color:var(--text-2);margin-top:6px}
+.biom{margin-top:14px;display:inline-flex;align-items:center;gap:12px;align-self:flex-start;padding:9px 18px;border-radius:999px;background:rgba(161,0,255,.12);border:1px solid rgba(201,124,255,.45)}
+.biom span{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--text-3)}
+.biom b{font-size:19px;color:var(--purple-l)}
+.bioR{display:flex;flex-direction:column;gap:22px}
+.bioq{margin:0;font-size:25px;line-height:1.38;color:var(--text-1,#E6E6EE);border-left:4px solid var(--purple);padding-left:22px;font-style:italic}
+.bioq span{color:var(--text-2)}.bioq b{font-style:normal;color:var(--text-1,#E6E6EE)}.bioq em{font-style:normal;font-weight:800;color:#fff}.bioq i{color:var(--purple-l)}
+.biob{display:grid;grid-template-columns:1fr 1fr;gap:14px 30px}
+.bioi{display:flex;gap:11px;align-items:flex-start;font-size:17px;line-height:1.4;color:var(--text-2)}
+.bioi>span{flex:none;width:8px;height:8px;border-radius:50%;margin-top:8px}
+.bioi b{color:#fff}
+.bioa{display:grid;grid-template-columns:1fr 1fr;gap:18px;padding-top:18px;border-top:1px solid rgba(255,255,255,.1)}
+.bioaw{display:flex;align-items:center;gap:16px;background:var(--bg-1);border:1px solid var(--border);border-left:4px solid var(--ac);border-radius:11px;padding:16px 18px}
+.bioaw img{flex:none;width:92px;height:92px;display:block}
+.bioaw img.pt{width:66px;height:94px;object-fit:cover;border-radius:6px}
+.bioaw span{display:block;font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ac);margin-bottom:4px}
+.bioaw b{display:block;font-size:22px;font-weight:800;color:#fff;line-height:1.1}
+.bioaw i{display:block;font-style:normal;font-size:13.5px;color:var(--text-3);margin-top:5px}
+.biom span{white-space:nowrap}
 </style>
 </head>
 <body>
@@ -1692,6 +1717,27 @@ body.present:has(#tk.cur) main,body.present:has(#tk.cur) .panel{background:trans
     <div class="ttlwhen">13 November 2026 · 15:25 to 15:55<br>Osaki Bright Core Hall, Tokyo</div>
   </div>
 </div></div><div class="fbcred">Photo: Takashi Miyazaki / Unsplash</div></section>
+<section class="chap" id="bio" data-notes="">
+  <div class="sh"><h2 class="st">About me</h2><span class="sn">Before we begin</span></div>
+  
+
+  <div class="biog">
+    <div class="biol">
+      <div class="biop"><img src="talk-img-8222e3214b.jpg" alt="Lalitkumar Bhamare"></div>
+      <div class="bion">Lalitkumar Bhamare</div>
+      <div class="bior">Sr. Manager, Accenture Song · Germany<br>EMEA Lead, Accenture QES Thought Leadership</div>
+      <div class="biom"><span>More of my work</span><b>talesoftesting.com</b></div>
+    </div>
+    <div class="bioR">
+      <p class="bioq"><span>Most organisations chase quality through <b>process</b>.</span> I have spent my career proving it comes from <em>consciousness</em>: a deliberate, human-centred awareness <i>woven</i> into every stage of software delivery.</p>
+      <div class="biob"><div class="bioi"><span style="background:var(--teal-l)"></span><div>CEO, Chief Editor and Co-founder: <b>Tea-time with Testers</b></div></div><div class="bioi"><span style="background:var(--teal-l)"></span><div>Former VP Education and Board of Directors: <b>Association for Software Testing, USA</b></div></div><div class="bioi"><span style="background:var(--amber-l)"></span><div>Co-author: <b>Global State of Testing Report</b></div></div><div class="bioi"><span style="background:var(--amber-l)"></span><div>Contributing author: <b>Taking Testing Seriously (Bach and Bolton)</b></div></div><div class="bioi"><span style="background:var(--purple-l)"></span><div>Creator: <b>QCSD and Agentic QCSD</b></div></div><div class="bioi"><span style="background:var(--purple-l)"></span><div>Creator: <b>QX (Quality Experience) framework</b></div></div><div class="bioi"><span style="background:var(--blue-l)"></span><div>International keynote speaker: <b>testing and quality coach</b></div></div><div class="bioi"><span style="background:var(--blue-l)"></span><div>Advisory board member: <b>German tech start-ups</b></div></div></div>
+      <div class="bioa">
+        <div class="bioaw" style="--ac:var(--purple-l)"><img src="talk-img-be59c8c21d.png" alt="EuroSTAR 2022 Best Paper Winner"><div><span>EuroSTAR 2022</span><b>Best Paper Winner</b><i>for Quality Conscious Software Delivery</i></div></div>
+        <div class="bioaw" style="--ac:var(--amber-l)"><img class="pt" src="talk-img-8b2b445ef2.jpg" alt="PractiTest 2025 Emerging QA Leader of the Year"><div><span>PractiTest 2025</span><b>Emerging QA Leader of the Year</b></div></div>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="chap fb divider" id="d1" data-notes=""><div class="fbimg" style="background-image:url(talk-img-d4971a9f27.jpg);background-position:50% 50%"></div><div class="fbshade"></div><div class="fbin"><div class="dv"><span class="dvn">01</span><span class="dvk">Section 01</span><h2 class="dvh">The faster horse syndrome</h2><p class="dvd">Every generation of tools made testing faster. The cost of poor software quality kept rising.</p></div></div><div class="fbcred">Photo: Angelica Hasbon / Unsplash</div></section>
 <section class="chap fb horse" id="fh" data-notes=""><div class="fbimg" style="background-image:url(talk-img-73625bf513.jpg);background-position:50% 30%"></div><div class="fbshade"></div><div class="fbin"><div class="hz"><div class="hzt"><span class="dvk">The faster horse syndrome</span><h2 class="dvh">Same rider, same road,<br>a faster horse</h2><p class="dvd">Every generation of tools changed how fast we test.<br>None of them changed what we test for, or the mindset behind it.</p></div><div class="hzg"><div class="hzcol frag" style="--hc:var(--red);--hcl:var(--red-l);--dl:0.5s"><span class="hzk">01 · What speed without quality costs</span><div class="hzbig">$2.41T</div><p class="hzbl">lost to poor software quality in the US in 2022, before counting $1.52T of technical debt</p><div class="hzx"><b>$5.4B</b><span>estimated Fortune 500 losses from a single faulty software update in July 2024</span></div><span class="hzsrc">CISQ 2022 · Parametrix 2024</span></div><div class="hzcol frag" style="--hc:var(--amber);--hcl:var(--amber-l);--dl:0.95s"><span class="hzk">02 · What AI is accelerating</span><div class="hzbig">−7.2%</div><p class="hzbl">delivery stability where teams adopted AI</p><div class="hzx"><b>8×</b><span>more duplicated code blocks in 2024, and 40% less refactoring</span></div><span class="hzsrc">DORA 2024 · GitClear 2025</span></div><div class="hzcol frag" style="--hc:var(--purple);--hcl:var(--purple-l);--dl:1.4s"><span class="hzk">03 · Where testing spends its AI</span><div class="hzbig">70%</div><p class="hzbl">of AI use in testing goes to writing test cases</p><div class="hzx"><b>4.5%</b><span>of teams are measured on business value. 56% are measured on coverage.</span></div><span class="hzsrc">State of Testing 2026</span></div></div><p class="hzfoot frag">We keep buying speed, and we keep paying for it in quality.</p></div></div><div class="fbcred">Photo: Catrin Ellis / Unsplash</div></section>
 </div>
